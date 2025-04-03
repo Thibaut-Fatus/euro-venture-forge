@@ -4,39 +4,39 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Building, CircleDollarSign, Code, Globe } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const benefits = [
-  {
-    title: "Affordable Solutions",
-    description: "Get custom solutions at a fraction of traditional development costs through our shared investment model.",
-    icon: CircleDollarSign,
-    color: "bg-green-100 text-green-700",
-    label: "Save €€€",
-  },
-  {
-    title: "European Sovereignty",
-    description: "All our technology is developed using European tools and infrastructure, ensuring data sovereignty and compliance.",
-    icon: Globe,
-    color: "bg-blue-100 text-blue-700",
-    label: "EU First",
-  },
-  {
-    title: "Recurring Revenue",
-    description: "Share in the revenue when your solution is deployed to other businesses with similar challenges.",
-    icon: Building,
-    color: "bg-purple-100 text-purple-700",
-    label: "Profit Share",
-  },
-  {
-    title: "Bespoke Development",
-    description: "Custom solutions built specifically for small business needs, not enterprise software scaled down.",
-    icon: Code,
-    color: "bg-amber-100 text-amber-700",
-    label: "Custom Built",
-  },
-];
-
 const BenefitsSection = () => {
   const { t } = useLanguage();
+
+  const benefits = [
+    {
+      title: t('affordableSolutions'),
+      description: t('affordableSolutionsDesc'),
+      icon: CircleDollarSign,
+      color: "bg-green-100 text-green-700",
+      label: t('save'),
+    },
+    {
+      title: t('europeanSovereignty'),
+      description: t('europeanSovereigntyDesc'),
+      icon: Globe,
+      color: "bg-blue-100 text-blue-700",
+      label: t('euFirst'),
+    },
+    {
+      title: t('recurringRevenue'),
+      description: t('recurringRevenueDesc'),
+      icon: Building,
+      color: "bg-purple-100 text-purple-700",
+      label: t('profitShare'),
+    },
+    {
+      title: t('bespokeDevelopment'),
+      description: t('bespokeDevelopmentDesc'),
+      icon: Code,
+      color: "bg-amber-100 text-amber-700",
+      label: t('customBuilt'),
+    },
+  ];
 
   return (
     <section id="benefits" className="section-container">

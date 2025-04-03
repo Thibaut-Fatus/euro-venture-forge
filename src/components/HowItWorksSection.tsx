@@ -2,39 +2,35 @@
 import { CheckCircle, FileText, Settings, Users } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const steps = [
-  {
-    id: 1,
-    name: "Submit Challenge",
-    description:
-      "Small businesses share their tech challenges through our simple submission form.",
-    icon: FileText,
-  },
-  {
-    id: 2,
-    name: "Validation & Selection",
-    description:
-      "We analyze submissions to identify common problems shared by multiple businesses in the same industry.",
-    icon: CheckCircle,
-  },
-  {
-    id: 3,
-    name: "Development",
-    description:
-      "Our team builds a European sovereign solution at a fraction of traditional agency costs.",
-    icon: Settings,
-  },
-  {
-    id: 4,
-    name: "Scale & Share Revenue",
-    description:
-      "The solution becomes a product offered to other businesses, with originators sharing in the revenue.",
-    icon: Users,
-  },
-];
-
 const HowItWorksSection = () => {
   const { t } = useLanguage();
+
+  const steps = [
+    {
+      id: 1,
+      name: t('submitChallenge'),
+      description: t('submitChallengeDesc'),
+      icon: FileText,
+    },
+    {
+      id: 2,
+      name: t('validationSelection'),
+      description: t('validationSelectionDesc'),
+      icon: CheckCircle,
+    },
+    {
+      id: 3,
+      name: t('development'),
+      description: t('developmentDesc'),
+      icon: Settings,
+    },
+    {
+      id: 4,
+      name: t('scaleShareRevenue'),
+      description: t('scaleShareRevenueDesc'),
+      icon: Users,
+    },
+  ];
 
   return (
     <section id="how-it-works" className="bg-studio-cream py-16 md:py-24">

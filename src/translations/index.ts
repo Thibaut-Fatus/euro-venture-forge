@@ -14,7 +14,48 @@ export type TranslationKey =
   | 'navBenefits'
   | 'navProjects'
   | 'navAbout'
-  | 'navFaq';
+  | 'navFaq'
+  | 'affordableSolutions'
+  | 'affordableSolutionsDesc'
+  | 'europeanSovereignty'
+  | 'europeanSovereigntyDesc'
+  | 'recurringRevenue'
+  | 'recurringRevenueDesc'
+  | 'bespokeDevelopment'
+  | 'bespokeDevelopmentDesc'
+  | 'save'
+  | 'euFirst'
+  | 'profitShare'
+  | 'customBuilt'
+  | 'featuredProjects'
+  | 'featuredProjectsSubtitle'
+  | 'viewAllProjects'
+  | 'learnMoreBtn'
+  | 'faqTitle'
+  | 'faqSubtitle'
+  | 'faqQuestion1'
+  | 'faqAnswer1'
+  | 'faqQuestion2'
+  | 'faqAnswer2'
+  | 'faqQuestion3'
+  | 'faqAnswer3'
+  | 'faqQuestion4'
+  | 'faqAnswer4'
+  | 'faqQuestion5'
+  | 'faqAnswer5'
+  | 'faqQuestion6'
+  | 'faqAnswer6'
+  | 'stillHaveQuestions'
+  | 'getInTouch'
+  | 'contactUs'
+  | 'submitChallenge'
+  | 'submitChallengeDesc'
+  | 'validationSelection'
+  | 'validationSelectionDesc'
+  | 'development'
+  | 'developmentDesc'
+  | 'scaleShareRevenue'
+  | 'scaleShareRevenueDesc';
 
 type Translations = {
   [key in TranslationKey]: string;
@@ -40,7 +81,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Benefits',
     navProjects: 'Projects',
     navAbout: 'About',
-    navFaq: 'FAQ'
+    navFaq: 'FAQ',
+    affordableSolutions: 'Affordable Solutions',
+    affordableSolutionsDesc: 'Get custom solutions at a fraction of traditional development costs through our shared investment model.',
+    europeanSovereignty: 'European Sovereignty',
+    europeanSovereigntyDesc: 'All our technology is developed using European tools and infrastructure, ensuring data sovereignty and compliance.',
+    recurringRevenue: 'Recurring Revenue',
+    recurringRevenueDesc: 'Share in the revenue when your solution is deployed to other businesses with similar challenges.',
+    bespokeDevelopment: 'Bespoke Development',
+    bespokeDevelopmentDesc: 'Custom solutions built specifically for small business needs, not enterprise software scaled down.',
+    save: 'Save €€€',
+    euFirst: 'EU First',
+    profitShare: 'Profit Share',
+    customBuilt: 'Custom Built',
+    featuredProjects: 'Featured Projects',
+    featuredProjectsSubtitle: 'Solutions we\'ve developed with small businesses that are now generating shared revenue',
+    viewAllProjects: 'View All Projects',
+    learnMoreBtn: 'Learn More',
+    faqTitle: 'Frequently Asked Questions',
+    faqSubtitle: 'Everything you need to know about our studio model and how it benefits your small business',
+    faqQuestion1: 'How much does it cost to submit a project?',
+    faqAnswer1: 'Project submission is completely free. If your project is selected for development, you\'ll only pay a fraction of the normal development costs, typically 20-30% of traditional agency rates.',
+    faqQuestion2: 'What happens if my project is selected?',
+    faqAnswer2: 'We\'ll contact you to discuss details, validate the problem further, and determine scope. Once we agree on terms, we\'ll begin development with regular updates and involvement from your team.',
+    faqQuestion3: 'How do I earn revenue from my project?',
+    faqAnswer3: 'When your solution is marketed to other businesses, you\'ll receive a percentage of the revenue, typically between 10-25% depending on your initial investment and the solution\'s success.',
+    faqQuestion4: 'What kinds of projects do you typically develop?',
+    faqAnswer4: 'We focus on digital solutions that solve real problems for small businesses – from appointment scheduling systems to inventory management, client portals, specialized accounting tools, and industry-specific workflow automation.',
+    faqQuestion5: 'What makes a good project submission?',
+    faqAnswer5: 'The best submissions identify a specific, well-defined problem that your business faces, that is likely shared by other businesses in your industry, and that doesn\'t have adequate solutions in the market today.',
+    faqQuestion6: 'What does \'European sovereignty\' mean for my project?',
+    faqAnswer6: 'It means your solution will be built using European infrastructure and software whenever possible, ensuring data remains under European jurisdiction and complies with EU regulations like GDPR.',
+    stillHaveQuestions: 'Still have questions?',
+    getInTouch: 'Get in touch with our team and we\'ll be happy to discuss your specific needs.',
+    contactUs: 'Contact Us',
+    submitChallenge: 'Submit Challenge',
+    submitChallengeDesc: 'Small businesses share their tech challenges through our simple submission form.',
+    validationSelection: 'Validation & Selection',
+    validationSelectionDesc: 'We analyze submissions to identify common problems shared by multiple businesses in the same industry.',
+    development: 'Development',
+    developmentDesc: 'Our team builds a European sovereign solution at a fraction of traditional agency costs.',
+    scaleShareRevenue: 'Scale & Share Revenue',
+    scaleShareRevenueDesc: 'The solution becomes a product offered to other businesses, with originators sharing in the revenue.'
   },
   fr: {
     heroTitle1: 'Transformez les défis des petites entreprises',
@@ -57,7 +139,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Avantages',
     navProjects: 'Projets',
     navAbout: 'À Propos',
-    navFaq: 'FAQ'
+    navFaq: 'FAQ',
+    affordableSolutions: 'Solutions Abordables',
+    affordableSolutionsDesc: 'Obtenez des solutions personnalisées à une fraction des coûts de développement traditionnels grâce à notre modèle d\'investissement partagé.',
+    europeanSovereignty: 'Souveraineté Européenne',
+    europeanSovereigntyDesc: 'Toute notre technologie est développée en utilisant des outils et une infrastructure européens, garantissant la souveraineté des données et la conformité.',
+    recurringRevenue: 'Revenus Récurrents',
+    recurringRevenueDesc: 'Partagez les revenus lorsque votre solution est déployée auprès d\'autres entreprises confrontées à des défis similaires.',
+    bespokeDevelopment: 'Développement Sur Mesure',
+    bespokeDevelopmentDesc: 'Solutions personnalisées conçues spécifiquement pour les besoins des petites entreprises, pas des logiciels d\'entreprise réduits.',
+    save: 'Économisez €€€',
+    euFirst: 'UE d\'abord',
+    profitShare: 'Partage des Bénéfices',
+    customBuilt: 'Construit Sur Mesure',
+    featuredProjects: 'Projets Vedettes',
+    featuredProjectsSubtitle: 'Solutions que nous avons développées avec des petites entreprises et qui génèrent maintenant des revenus partagés',
+    viewAllProjects: 'Voir Tous les Projets',
+    learnMoreBtn: 'En Savoir Plus',
+    faqTitle: 'Questions Fréquemment Posées',
+    faqSubtitle: 'Tout ce que vous devez savoir sur notre modèle de studio et comment il bénéficie à votre petite entreprise',
+    faqQuestion1: 'Combien coûte la soumission d\'un projet?',
+    faqAnswer1: 'La soumission de projet est totalement gratuite. Si votre projet est sélectionné pour le développement, vous ne paierez qu\'une fraction des coûts de développement normaux, généralement 20-30% des tarifs d\'agence traditionnels.',
+    faqQuestion2: 'Que se passe-t-il si mon projet est sélectionné?',
+    faqAnswer2: 'Nous vous contacterons pour discuter des détails, valider davantage le problème et déterminer la portée. Une fois que nous nous sommes mis d\'accord sur les conditions, nous commencerons le développement avec des mises à jour régulières et l\'implication de votre équipe.',
+    faqQuestion3: 'Comment puis-je gagner des revenus de mon projet?',
+    faqAnswer3: 'Lorsque votre solution est commercialisée auprès d\'autres entreprises, vous recevrez un pourcentage des revenus, généralement entre 10 et 25% selon votre investissement initial et le succès de la solution.',
+    faqQuestion4: 'Quels types de projets développez-vous généralement?',
+    faqAnswer4: 'Nous nous concentrons sur des solutions numériques qui résolvent des problèmes réels pour les petites entreprises - des systèmes de planification de rendez-vous à la gestion des stocks, en passant par les portails clients, les outils comptables spécialisés et l\'automatisation des flux de travail spécifiques à l\'industrie.',
+    faqQuestion5: 'Qu\'est-ce qui fait une bonne soumission de projet?',
+    faqAnswer5: 'Les meilleures soumissions identifient un problème spécifique et bien défini auquel votre entreprise est confrontée, qui est probablement partagé par d\'autres entreprises de votre secteur, et qui ne dispose pas de solutions adéquates sur le marché aujourd\'hui.',
+    faqQuestion6: 'Que signifie la "souveraineté européenne" pour mon projet?',
+    faqAnswer6: 'Cela signifie que votre solution sera construite en utilisant l\'infrastructure et les logiciels européens dans la mesure du possible, garantissant que les données restent sous juridiction européenne et conformes aux réglementations de l\'UE comme le RGPD.',
+    stillHaveQuestions: 'Vous avez encore des questions?',
+    getInTouch: 'Contactez notre équipe et nous serons heureux de discuter de vos besoins spécifiques.',
+    contactUs: 'Contactez-Nous',
+    submitChallenge: 'Soumettre un Défi',
+    submitChallengeDesc: 'Les petites entreprises partagent leurs défis technologiques via notre formulaire de soumission simple.',
+    validationSelection: 'Validation & Sélection',
+    validationSelectionDesc: 'Nous analysons les soumissions pour identifier les problèmes communs partagés par plusieurs entreprises du même secteur.',
+    development: 'Développement',
+    developmentDesc: 'Notre équipe construit une solution souveraine européenne à une fraction des coûts d\'agence traditionnels.',
+    scaleShareRevenue: 'Échelle & Partage des Revenus',
+    scaleShareRevenueDesc: 'La solution devient un produit proposé à d\'autres entreprises, les initiateurs partageant les revenus.'
   },
   es: {
     heroTitle1: 'Transforma los desafíos de pequeñas empresas',
@@ -74,7 +197,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Beneficios',
     navProjects: 'Proyectos',
     navAbout: 'Acerca De',
-    navFaq: 'Preguntas Frecuentes'
+    navFaq: 'Preguntas Frecuentes',
+    affordableSolutions: 'Soluciones Asequibles',
+    affordableSolutionsDesc: 'Obtenga soluciones personalizadas a una fracción de los costos de desarrollo tradicionales a través de nuestro modelo de inversión compartida.',
+    europeanSovereignty: 'Soberanía Europea',
+    europeanSovereigntyDesc: 'Toda nuestra tecnología se desarrolla utilizando herramientas e infraestructura europeas, garantizando la soberanía de los datos y el cumplimiento normativo.',
+    recurringRevenue: 'Ingresos Recurrentes',
+    recurringRevenueDesc: 'Comparta los ingresos cuando su solución se implemente en otras empresas con desafíos similares.',
+    bespokeDevelopment: 'Desarrollo a Medida',
+    bespokeDevelopmentDesc: 'Soluciones personalizadas construidas específicamente para las necesidades de pequeñas empresas, no software empresarial reducido.',
+    save: 'Ahorre €€€',
+    euFirst: 'UE Primero',
+    profitShare: 'Compartir Beneficios',
+    customBuilt: 'Hecho a Medida',
+    featuredProjects: 'Proyectos Destacados',
+    featuredProjectsSubtitle: 'Soluciones que hemos desarrollado con pequeñas empresas que ahora están generando ingresos compartidos',
+    viewAllProjects: 'Ver Todos los Proyectos',
+    learnMoreBtn: 'Saber Más',
+    faqTitle: 'Preguntas Frecuentes',
+    faqSubtitle: 'Todo lo que necesita saber sobre nuestro modelo de estudio y cómo beneficia a su pequeña empresa',
+    faqQuestion1: '¿Cuánto cuesta enviar un proyecto?',
+    faqAnswer1: 'El envío de proyectos es completamente gratuito. Si su proyecto es seleccionado para desarrollo, solo pagará una fracción de los costos normales de desarrollo, típicamente 20-30% de las tarifas de agencias tradicionales.',
+    faqQuestion2: '¿Qué sucede si mi proyecto es seleccionado?',
+    faqAnswer2: 'Nos pondremos en contacto para discutir detalles, validar más a fondo el problema y determinar el alcance. Una vez que acordemos los términos, comenzaremos el desarrollo con actualizaciones regulares e involucramiento de su equipo.',
+    faqQuestion3: '¿Cómo gano ingresos de mi proyecto?',
+    faqAnswer3: 'Cuando su solución se comercializa a otras empresas, recibirá un porcentaje de los ingresos, típicamente entre 10-25% dependiendo de su inversión inicial y el éxito de la solución.',
+    faqQuestion4: '¿Qué tipos de proyectos desarrollan normalmente?',
+    faqAnswer4: 'Nos enfocamos en soluciones digitales que resuelven problemas reales para pequeñas empresas – desde sistemas de programación de citas hasta gestión de inventario, portales de clientes, herramientas contables especializadas y automatización de flujos de trabajo específicos de la industria.',
+    faqQuestion5: '¿Qué hace que una presentación de proyecto sea buena?',
+    faqAnswer5: 'Las mejores presentaciones identifican un problema específico y bien definido que enfrenta su empresa, que probablemente sea compartido por otras empresas en su industria, y que no tiene soluciones adecuadas en el mercado actual.',
+    faqQuestion6: '¿Qué significa la "soberanía europea" para mi proyecto?',
+    faqAnswer6: 'Significa que su solución se construirá utilizando infraestructura y software europeos siempre que sea posible, asegurando que los datos permanezcan bajo jurisdicción europea y cumplan con las regulaciones de la UE como el GDPR.',
+    stillHaveQuestions: '¿Todavía tiene preguntas?',
+    getInTouch: 'Póngase en contacto con nuestro equipo y estaremos encantados de discutir sus necesidades específicas.',
+    contactUs: 'Contáctenos',
+    submitChallenge: 'Enviar Desafío',
+    submitChallengeDesc: 'Las pequeñas empresas comparten sus desafíos tecnológicos a través de nuestro simple formulario de envío.',
+    validationSelection: 'Validación y Selección',
+    validationSelectionDesc: 'Analizamos las presentaciones para identificar problemas comunes compartidos por múltiples empresas en la misma industria.',
+    development: 'Desarrollo',
+    developmentDesc: 'Nuestro equipo construye una solución soberana europea a una fracción de los costos tradicionales de agencia.',
+    scaleShareRevenue: 'Escalar y Compartir Ingresos',
+    scaleShareRevenueDesc: 'La solución se convierte en un producto ofrecido a otras empresas, con los originadores compartiendo los ingresos.'
   },
   de: {
     heroTitle1: 'Verwandeln Sie Herausforderungen kleiner Unternehmen',
@@ -91,7 +255,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Vorteile',
     navProjects: 'Projekte',
     navAbout: 'Über Uns',
-    navFaq: 'FAQ'
+    navFaq: 'FAQ',
+    affordableSolutions: 'Erschwingliche Lösungen',
+    affordableSolutionsDesc: 'Erhalten Sie maßgeschneiderte Lösungen zu einem Bruchteil der traditionellen Entwicklungskosten durch unser gemeinsames Investitionsmodell.',
+    europeanSovereignty: 'Europäische Souveränität',
+    europeanSovereigntyDesc: 'Unsere gesamte Technologie wird mit europäischen Werkzeugen und Infrastruktur entwickelt und gewährleistet Datensouveränität und Compliance.',
+    recurringRevenue: 'Wiederkehrende Einnahmen',
+    recurringRevenueDesc: 'Teilen Sie die Einnahmen, wenn Ihre Lösung bei anderen Unternehmen mit ähnlichen Herausforderungen eingesetzt wird.',
+    bespokeDevelopment: 'Maßgeschneiderte Entwicklung',
+    bespokeDevelopmentDesc: 'Maßgeschneiderte Lösungen, die speziell für die Bedürfnisse kleiner Unternehmen entwickelt wurden, keine verkleinerte Unternehmenssoftware.',
+    save: 'Sparen Sie €€€',
+    euFirst: 'EU Zuerst',
+    profitShare: 'Gewinnbeteiligung',
+    customBuilt: 'Maßgeschneidert',
+    featuredProjects: 'Ausgewählte Projekte',
+    featuredProjectsSubtitle: 'Lösungen, die wir mit kleinen Unternehmen entwickelt haben und die jetzt gemeinsame Einnahmen generieren',
+    viewAllProjects: 'Alle Projekte Anzeigen',
+    learnMoreBtn: 'Mehr Erfahren',
+    faqTitle: 'Häufig Gestellte Fragen',
+    faqSubtitle: 'Alles, was Sie über unser Studiomodell wissen müssen und wie es Ihrem kleinen Unternehmen zugute kommt',
+    faqQuestion1: 'Wie viel kostet es, ein Projekt einzureichen?',
+    faqAnswer1: 'Die Projekteinreichung ist völlig kostenlos. Wenn Ihr Projekt für die Entwicklung ausgewählt wird, zahlen Sie nur einen Bruchteil der normalen Entwicklungskosten, typischerweise 20-30% der traditionellen Agenturpreise.',
+    faqQuestion2: 'Was passiert, wenn mein Projekt ausgewählt wird?',
+    faqAnswer2: 'Wir werden Sie kontaktieren, um Details zu besprechen, das Problem weiter zu validieren und den Umfang zu bestimmen. Sobald wir uns auf Bedingungen geeinigt haben, beginnen wir mit der Entwicklung mit regelmäßigen Updates und der Beteiligung Ihres Teams.',
+    faqQuestion3: 'Wie verdiene ich Einnahmen aus meinem Projekt?',
+    faqAnswer3: 'Wenn Ihre Lösung an andere Unternehmen vermarktet wird, erhalten Sie einen Prozentsatz der Einnahmen, typischerweise zwischen 10-25%, abhängig von Ihrer anfänglichen Investition und dem Erfolg der Lösung.',
+    faqQuestion4: 'Welche Arten von Projekten entwickeln Sie typischerweise?',
+    faqAnswer4: 'Wir konzentrieren uns auf digitale Lösungen, die echte Probleme für kleine Unternehmen lösen – von Terminplanungssystemen bis hin zu Bestandsmanagement, Kundenportalen, spezialisierten Buchhaltungstools und branchenspezifischer Workflow-Automatisierung.',
+    faqQuestion5: 'Was macht eine gute Projekteinreichung aus?',
+    faqAnswer5: 'Die besten Einreichungen identifizieren ein spezifisches, klar definiertes Problem, mit dem Ihr Unternehmen konfrontiert ist, das wahrscheinlich von anderen Unternehmen in Ihrer Branche geteilt wird und für das es heute keine adäquaten Lösungen auf dem Markt gibt.',
+    faqQuestion6: 'Was bedeutet "Europäische Souveränität" für mein Projekt?',
+    faqAnswer6: 'Es bedeutet, dass Ihre Lösung wann immer möglich mit europäischer Infrastruktur und Software gebaut wird, wodurch sichergestellt wird, dass Daten unter europäischer Gerichtsbarkeit bleiben und EU-Vorschriften wie die DSGVO einhalten.',
+    stillHaveQuestions: 'Haben Sie noch Fragen?',
+    getInTouch: 'Kontaktieren Sie unser Team und wir besprechen gerne Ihre spezifischen Bedürfnisse.',
+    contactUs: 'Kontaktieren Sie Uns',
+    submitChallenge: 'Herausforderung Einreichen',
+    submitChallengeDesc: 'Kleine Unternehmen teilen ihre technologischen Herausforderungen über unser einfaches Einreichungsformular mit.',
+    validationSelection: 'Validierung & Auswahl',
+    validationSelectionDesc: 'Wir analysieren Einreichungen, um gemeinsame Probleme zu identifizieren, die von mehreren Unternehmen in derselben Branche geteilt werden.',
+    development: 'Entwicklung',
+    developmentDesc: 'Unser Team entwickelt eine europäisch souveräne Lösung zu einem Bruchteil der traditionellen Agenturkosten.',
+    scaleShareRevenue: 'Skalieren & Einnahmen Teilen',
+    scaleShareRevenueDesc: 'Die Lösung wird zu einem Produkt, das anderen Unternehmen angeboten wird, wobei die Initiatoren an den Einnahmen beteiligt werden.'
   },
   it: {
     heroTitle1: 'Trasforma le sfide delle piccole imprese',
@@ -108,7 +313,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Vantaggi',
     navProjects: 'Progetti',
     navAbout: 'Chi Siamo',
-    navFaq: 'FAQ'
+    navFaq: 'FAQ',
+    affordableSolutions: 'Soluzioni Convenienti',
+    affordableSolutionsDesc: 'Ottieni soluzioni personalizzate a una frazione dei costi di sviluppo tradizionali attraverso il nostro modello di investimento condiviso.',
+    europeanSovereignty: 'Sovranità Europea',
+    europeanSovereigntyDesc: 'Tutta la nostra tecnologia è sviluppata utilizzando strumenti e infrastrutture europee, garantendo la sovranità dei dati e la conformità.',
+    recurringRevenue: 'Entrate Ricorrenti',
+    recurringRevenueDesc: 'Condividi le entrate quando la tua soluzione viene implementata in altre aziende con sfide simili.',
+    bespokeDevelopment: 'Sviluppo Su Misura',
+    bespokeDevelopmentDesc: 'Soluzioni personalizzate costruite specificamente per le esigenze delle piccole imprese, non software aziendali ridimensionati.',
+    save: 'Risparmia €€€',
+    euFirst: 'UE Prima',
+    profitShare: 'Condivisione Profitti',
+    customBuilt: 'Costruito Su Misura',
+    featuredProjects: 'Progetti in Evidenza',
+    featuredProjectsSubtitle: 'Soluzioni che abbiamo sviluppato con piccole imprese che ora generano entrate condivise',
+    viewAllProjects: 'Visualizza Tutti i Progetti',
+    learnMoreBtn: 'Scopri di Più',
+    faqTitle: 'Domande Frequenti',
+    faqSubtitle: 'Tutto ciò che devi sapere sul nostro modello di studio e come avvantaggia la tua piccola impresa',
+    faqQuestion1: 'Quanto costa inviare un progetto?',
+    faqAnswer1: 'L\'invio di un progetto è completamente gratuito. Se il tuo progetto viene selezionato per lo sviluppo, pagherai solo una frazione dei normali costi di sviluppo, tipicamente il 20-30% delle tariffe delle agenzie tradizionali.',
+    faqQuestion2: 'Cosa succede se il mio progetto viene selezionato?',
+    faqAnswer2: 'Ti contatteremo per discutere i dettagli, validare ulteriormente il problema e determinare la portata. Una volta concordati i termini, inizieremo lo sviluppo con aggiornamenti regolari e il coinvolgimento del tuo team.',
+    faqQuestion3: 'Come guadagno entrate dal mio progetto?',
+    faqAnswer3: 'Quando la tua soluzione viene commercializzata ad altre aziende, riceverai una percentuale delle entrate, tipicamente tra il 10-25% a seconda del tuo investimento iniziale e del successo della soluzione.',
+    faqQuestion4: 'Che tipo di progetti sviluppate tipicamente?',
+    faqAnswer4: 'Ci concentriamo su soluzioni digitali che risolvono problemi reali per le piccole imprese – dai sistemi di pianificazione degli appuntamenti alla gestione dell\'inventario, portali clienti, strumenti contabili specializzati e automazione del flusso di lavoro specifica del settore.',
+    faqQuestion5: 'Cosa rende valida una proposta di progetto?',
+    faqAnswer5: 'Le migliori proposte identificano un problema specifico e ben definito che la tua azienda affronta, che probabilmente è condiviso da altre aziende nel tuo settore, e per il quale non esistono soluzioni adeguate sul mercato oggi.',
+    faqQuestion6: 'Cosa significa "sovranità europea" per il mio progetto?',
+    faqAnswer6: 'Significa che la tua soluzione sarà costruita utilizzando infrastrutture e software europei quando possibile, garantendo che i dati rimangano sotto la giurisdizione europea e rispettino le normative dell\'UE come il GDPR.',
+    stillHaveQuestions: 'Hai ancora domande?',
+    getInTouch: 'Contatta il nostro team e saremo felici di discutere le tue esigenze specifiche.',
+    contactUs: 'Contattaci',
+    submitChallenge: 'Invia Sfida',
+    submitChallengeDesc: 'Le piccole imprese condividono le loro sfide tecnologiche attraverso il nostro semplice modulo di invio.',
+    validationSelection: 'Validazione e Selezione',
+    validationSelectionDesc: 'Analizziamo gli invii per identificare problemi comuni condivisi da più aziende nello stesso settore.',
+    development: 'Sviluppo',
+    developmentDesc: 'Il nostro team costruisce una soluzione sovrana europea a una frazione dei costi delle agenzie tradizionali.',
+    scaleShareRevenue: 'Scala e Condividi Entrate',
+    scaleShareRevenueDesc: 'La soluzione diventa un prodotto offerto ad altre aziende, con gli ideatori che condividono le entrate.'
   },
   pt: {
     heroTitle1: 'Transforme os desafios de pequenas empresas',
@@ -125,7 +371,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Benefícios',
     navProjects: 'Projetos',
     navAbout: 'Sobre',
-    navFaq: 'FAQ'
+    navFaq: 'FAQ',
+    affordableSolutions: 'Soluções Acessíveis',
+    affordableSolutionsDesc: 'Obtenha soluções personalizadas a uma fração dos custos de desenvolvimento tradicionais através do nosso modelo de investimento compartilhado.',
+    europeanSovereignty: 'Soberania Europeia',
+    europeanSovereigntyDesc: 'Toda a nossa tecnologia é desenvolvida usando ferramentas e infraestrutura europeias, garantindo soberania e conformidade de dados.',
+    recurringRevenue: 'Receita Recorrente',
+    recurringRevenueDesc: 'Compartilhe a receita quando sua solução for implantada em outras empresas com desafios semelhantes.',
+    bespokeDevelopment: 'Desenvolvimento Personalizado',
+    bespokeDevelopmentDesc: 'Soluções personalizadas construídas especificamente para as necessidades de pequenas empresas, não software empresarial reduzido.',
+    save: 'Economize €€€',
+    euFirst: 'UE Primeiro',
+    profitShare: 'Compartilhamento de Lucros',
+    customBuilt: 'Feito sob Medida',
+    featuredProjects: 'Projetos em Destaque',
+    featuredProjectsSubtitle: 'Soluções que desenvolvemos com pequenas empresas que agora estão gerando receita compartilhada',
+    viewAllProjects: 'Ver Todos os Projetos',
+    learnMoreBtn: 'Saiba Mais',
+    faqTitle: 'Perguntas Frequentes',
+    faqSubtitle: 'Tudo o que você precisa saber sobre nosso modelo de estúdio e como ele beneficia sua pequena empresa',
+    faqQuestion1: 'Quanto custa enviar um projeto?',
+    faqAnswer1: 'O envio do projeto é completamente gratuito. Se o seu projeto for selecionado para desenvolvimento, você pagará apenas uma fração dos custos normais de desenvolvimento, tipicamente 20-30% das taxas de agências tradicionais.',
+    faqQuestion2: 'O que acontece se meu projeto for selecionado?',
+    faqAnswer2: 'Entraremos em contato para discutir detalhes, validar mais o problema e determinar o escopo. Uma vez que concordemos com os termos, começaremos o desenvolvimento com atualizações regulares e envolvimento da sua equipe.',
+    faqQuestion3: 'Como ganho receita do meu projeto?',
+    faqAnswer3: 'Quando sua solução é comercializada para outras empresas, você receberá uma porcentagem da receita, tipicamente entre 10-25% dependendo do seu investimento inicial e do sucesso da solução.',
+    faqQuestion4: 'Que tipos de projetos vocês tipicamente desenvolvem?',
+    faqAnswer4: 'Focamos em soluções digitais que resolvem problemas reais para pequenas empresas – desde sistemas de agendamento de compromissos até gestão de estoque, portais de clientes, ferramentas contábeis especializadas e automação de fluxo de trabalho específica do setor.',
+    faqQuestion5: 'O que faz uma boa submissão de projeto?',
+    faqAnswer5: 'As melhores submissões identificam um problema específico e bem definido que sua empresa enfrenta, que provavelmente é compartilhado por outras empresas em seu setor, e que não tem soluções adequadas no mercado hoje.',
+    faqQuestion6: 'O que significa "soberania europeia" para o meu projeto?',
+    faqAnswer6: 'Significa que sua solução será construída usando infraestrutura e software europeus sempre que possível, garantindo que os dados permaneçam sob jurisdição europeia e em conformidade com regulamentações da UE como o GDPR.',
+    stillHaveQuestions: 'Ainda tem perguntas?',
+    getInTouch: 'Entre em contato com nossa equipe e teremos prazer em discutir suas necessidades específicas.',
+    contactUs: 'Contate-Nos',
+    submitChallenge: 'Enviar Desafio',
+    submitChallengeDesc: 'Pequenas empresas compartilham seus desafios tecnológicos através do nosso simples formulário de envio.',
+    validationSelection: 'Validação e Seleção',
+    validationSelectionDesc: 'Analisamos os envios para identificar problemas comuns compartilhados por várias empresas no mesmo setor.',
+    development: 'Desenvolvimento',
+    developmentDesc: 'Nossa equipe constrói uma solução europeia soberana a uma fração dos custos de agências tradicionais.',
+    scaleShareRevenue: 'Escalar e Compartilhar Receita',
+    scaleShareRevenueDesc: 'A solução se torna um produto oferecido a outras empresas, com os criadores compartilhando a receita.'
   },
   nl: {
     heroTitle1: 'Transformeer uitdagingen van kleine bedrijven',
@@ -142,7 +429,48 @@ export const translations: TranslationsMap = {
     navBenefits: 'Voordelen',
     navProjects: 'Projecten',
     navAbout: 'Over Ons',
-    navFaq: 'FAQ'
+    navFaq: 'FAQ',
+    affordableSolutions: 'Betaalbare Oplossingen',
+    affordableSolutionsDesc: 'Krijg aangepaste oplossingen voor een fractie van de traditionele ontwikkelingskosten via ons gedeelde investeringsmodel.',
+    europeanSovereign: 'Europese Soevereiniteit',
+    europeanSovereigntyDesc: 'Al onze technologie wordt ontwikkeld met Europese tools en infrastructuur, wat gegevenssoevereiniteit en naleving garandeert.',
+    recurringRevenue: 'Terugkerende Inkomsten',
+    recurringRevenueDesc: 'Deel in de inkomsten wanneer uw oplossing wordt ingezet bij andere bedrijven met vergelijkbare uitdagingen.',
+    bespokeDevelopment: 'Op Maat Gemaakte Ontwikkeling',
+    bespokeDevelopmentDesc: 'Aangepaste oplossingen specifiek gebouwd voor de behoeften van kleine bedrijven, geen verkleinde bedrijfssoftware.',
+    save: 'Bespaar €€€',
+    euFirst: 'EU Eerst',
+    profitShare: 'Winstdeling',
+    customBuilt: 'Op Maat Gemaakt',
+    featuredProjects: 'Uitgelichte Projecten',
+    featuredProjectsSubtitle: 'Oplossingen die we hebben ontwikkeld met kleine bedrijven die nu gedeelde inkomsten genereren',
+    viewAllProjects: 'Bekijk Alle Projecten',
+    learnMoreBtn: 'Meer Informatie',
+    faqTitle: 'Veelgestelde Vragen',
+    faqSubtitle: 'Alles wat u moet weten over ons studiomodel en hoe het uw kleine bedrijf ten goede komt',
+    faqQuestion1: 'Hoeveel kost het om een project in te dienen?',
+    faqAnswer1: 'Projectindiening is volledig gratis. Als uw project wordt geselecteerd voor ontwikkeling, betaalt u slechts een fractie van de normale ontwikkelingskosten, meestal 20-30% van traditionele bureautarieven.',
+    faqQuestion2: 'Wat gebeurt er als mijn project wordt geselecteerd?',
+    faqAnswer2: 'We nemen contact met u op om details te bespreken, het probleem verder te valideren en de reikwijdte te bepalen. Zodra we overeenstemming hebben bereikt over de voorwaarden, beginnen we met de ontwikkeling met regelmatige updates en betrokkenheid van uw team.',
+    faqQuestion3: 'Hoe verdien ik inkomsten uit mijn project?',
+    faqAnswer3: 'Wanneer uw oplossing aan andere bedrijven wordt aangeboden, ontvangt u een percentage van de inkomsten, meestal tussen 10-25% afhankelijk van uw initiële investering en het succes van de oplossing.',
+    faqQuestion4: 'Wat voor soort projecten ontwikkelen jullie meestal?',
+    faqAnswer4: 'We richten ons op digitale oplossingen die echte problemen oplossen voor kleine bedrijven – van afsprakensystemen tot voorraadbeheer, klantportalen, gespecialiseerde boekhoudtools en branchespecifieke workflowautomatisering.',
+    faqQuestion5: 'Wat maakt een goede projectindiening?',
+    faqAnswer5: 'De beste inzendingen identificeren een specifiek, goed gedefinieerd probleem waarmee uw bedrijf wordt geconfronteerd, dat waarschijnlijk wordt gedeeld door andere bedrijven in uw branche, en waarvoor vandaag de dag geen adequate oplossingen op de markt zijn.',
+    faqQuestion6: 'Wat betekent "Europese soevereiniteit" voor mijn project?',
+    faqAnswer6: 'Het betekent dat uw oplossing wordt gebouwd met Europese infrastructuur en software wanneer mogelijk, zodat gegevens onder Europese jurisdictie blijven en voldoen aan EU-regelgeving zoals de AVG.',
+    stillHaveQuestions: 'Heeft u nog vragen?',
+    getInTouch: 'Neem contact op met ons team en we bespreken graag uw specifieke behoeften.',
+    contactUs: 'Neem Contact Op',
+    submitChallenge: 'Uitdaging Indienen',
+    submitChallengeDesc: 'Kleine bedrijven delen hun technologische uitdagingen via ons eenvoudige indieningsformulier.',
+    validationSelection: 'Validatie & Selectie',
+    validationSelectionDesc: 'We analyseren inzendingen om gemeenschappelijke problemen te identificeren die worden gedeeld door meerdere bedrijven in dezelfde sector.',
+    development: 'Ontwikkeling',
+    developmentDesc: 'Ons team bouwt een Europees soevereine oplossing tegen een fractie van de traditionele bureaukosten.',
+    scaleShareRevenue: 'Schaal & Deel Inkomsten',
+    scaleShareRevenueDesc: 'De oplossing wordt een product dat aan andere bedrijven wordt aangeboden, waarbij de initiatiefnemers delen in de inkomsten.'
   }
 };
 

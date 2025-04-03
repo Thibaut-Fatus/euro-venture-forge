@@ -2,42 +2,45 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-
-const projects = [
-  {
-    title: "Appointment Scheduler",
-    description: "An intelligent scheduling system for service-based businesses that reduces no-shows by 35%",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    category: "Service Industry",
-    status: "Live",
-    partners: 16,
-  },
-  {
-    title: "Supply Chain Tracker",
-    description: "Track inventory and shipments in real-time with this European-hosted logistics platform",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    category: "Retail & Distribution",
-    status: "Beta",
-    partners: 8,
-  },
-  {
-    title: "Client Portal",
-    description: "Secure client management system with document sharing and payment processing",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    category: "Professional Services",
-    status: "Development",
-    partners: 12,
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 const ProjectsSection = () => {
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      title: "Appointment Scheduler",
+      description: "An intelligent scheduling system for service-based businesses that reduces no-shows by 35%",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      category: "Service Industry",
+      status: "Live",
+      partners: 16,
+    },
+    {
+      title: "Supply Chain Tracker",
+      description: "Track inventory and shipments in real-time with this European-hosted logistics platform",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      category: "Retail & Distribution",
+      status: "Beta",
+      partners: 8,
+    },
+    {
+      title: "Client Portal",
+      description: "Secure client management system with document sharing and payment processing",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      category: "Professional Services",
+      status: "Development",
+      partners: 12,
+    },
+  ];
+
   return (
     <section id="projects" className="bg-gray-50 py-16 md:py-24">
       <div className="section-container">
         <div className="text-center">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">{t('featuredProjects')}</h2>
           <p className="section-subtitle">
-            Solutions we've developed with small businesses that are now generating shared revenue
+            {t('featuredProjectsSubtitle')}
           </p>
         </div>
 
@@ -75,7 +78,7 @@ const ProjectsSection = () => {
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full">Learn More</Button>
+                <Button variant="outline" className="w-full">{t('learnMoreBtn')}</Button>
               </CardFooter>
             </Card>
           ))}
@@ -83,7 +86,7 @@ const ProjectsSection = () => {
 
         <div className="mt-12 text-center">
           <Button size="lg" className="bg-studio-blue hover:bg-studio-teal">
-            View All Projects
+            {t('viewAllProjects')}
           </Button>
         </div>
       </div>
