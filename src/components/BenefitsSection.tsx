@@ -2,6 +2,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building, CircleDollarSign, Code, Globe } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const benefits = [
   {
@@ -35,12 +36,14 @@ const benefits = [
 ];
 
 const BenefitsSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="benefits" className="section-container">
       <div className="text-center">
-        <h2 className="section-title">Small Business Benefits</h2>
+        <h2 className="section-title">{t('benefits')}</h2>
         <p className="section-subtitle">
-          Our studio model delivers unique advantages designed specifically for European small businesses
+          {t('benefitsSubtitle')}
         </p>
       </div>
 

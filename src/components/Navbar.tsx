@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 shadow-sm">
@@ -37,29 +39,29 @@ const Navbar = () => {
           
           <nav className="hidden md:flex space-x-10">
             <a href="#how-it-works" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              How It Works
+              {t('navHowItWorks')}
             </a>
             <a href="#benefits" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              Benefits
+              {t('navBenefits')}
             </a>
             <a href="#projects" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              Projects
+              {t('navProjects')}
             </a>
             <a href="#about" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              About
+              {t('navAbout')}
             </a>
             <a href="#faq" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              FAQ
+              {t('navFaq')}
             </a>
           </nav>
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <LanguageSelector />
             <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
-              Log in
+              {t('login')}
             </Button>
             <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
-              Submit Your Project
+              {t('submitProject')}
             </Button>
           </div>
         </div>
@@ -95,7 +97,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      How It Works
+                      {t('navHowItWorks')}
                     </span>
                   </a>
                   <a
@@ -104,7 +106,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      Benefits
+                      {t('navBenefits')}
                     </span>
                   </a>
                   <a
@@ -113,7 +115,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      Projects
+                      {t('navProjects')}
                     </span>
                   </a>
                   <a
@@ -122,7 +124,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      About
+                      {t('navAbout')}
                     </span>
                   </a>
                   <a
@@ -131,7 +133,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      FAQ
+                      {t('navFaq')}
                     </span>
                   </a>
                 </nav>
@@ -143,10 +145,10 @@ const Navbar = () => {
               </div>
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <Button variant="ghost" className="text-studio-blue hover:text-studio-teal justify-center">
-                  Log in
+                  {t('login')}
                 </Button>
                 <Button className="w-full bg-studio-blue hover:bg-studio-teal">
-                  Submit Project
+                  {t('submitProject')}
                 </Button>
               </div>
             </div>

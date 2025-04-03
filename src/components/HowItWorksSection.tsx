@@ -1,5 +1,6 @@
 
 import { CheckCircle, FileText, Settings, Users } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const steps = [
   {
@@ -33,13 +34,15 @@ const steps = [
 ];
 
 const HowItWorksSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="how-it-works" className="bg-studio-cream py-16 md:py-24">
       <div className="section-container">
         <div className="text-center">
-          <h2 className="section-title">How It Works</h2>
+          <h2 className="section-title">{t('howItWorks')}</h2>
           <p className="section-subtitle">
-            We transform small business pain points into sustainable solutions through our unique studio model
+            {t('howItWorksSubtitle')}
           </p>
         </div>
 
