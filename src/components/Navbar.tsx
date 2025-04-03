@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,6 +54,7 @@ const Navbar = () => {
           </nav>
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <LanguageSelector />
             <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
               Log in
             </Button>
@@ -136,6 +138,9 @@ const Navbar = () => {
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
+              <div className="flex items-center mb-4">
+                <LanguageSelector />
+              </div>
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <Button variant="ghost" className="text-studio-blue hover:text-studio-teal justify-center">
                   Log in
