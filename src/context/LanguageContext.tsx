@@ -1,6 +1,6 @@
 
 import React, { createContext, useState, useContext, useEffect, ReactNode } from "react";
-import { TranslationKey, getTranslation } from "@/translations";
+import { Translations, translations, LanguageCode } from "@/translations";
 
 type Language = {
   code: string;
@@ -22,7 +22,7 @@ type LanguageContextType = {
   currentLanguage: Language;
   changeLanguage: (code: string) => void;
   languages: Language[];
-  t: (key: TranslationKey) => string;
+  t: (key: keyof Translations) => string;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -48,8 +48,10 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     }
   };
 
-  const t = (key: TranslationKey): string => {
-    return getTranslation(key, currentLanguage.code);
+  const t = (key: keyof Translations): string => {
+    const langCode = currentLanguage.code as LanguageCode;
+    // Use the translations for the current language, fallback to English if not available
+    return translations[langCode]?.[key] || translations.en[key] || key;
   };
 
   return (
