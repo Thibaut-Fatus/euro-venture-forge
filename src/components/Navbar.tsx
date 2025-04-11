@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
@@ -14,12 +15,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <Link to="/">
               <span className="sr-only">EuroVentureForge</span>
               <h1 className="text-2xl font-bold text-studio-navy">
                 Euro<span className="text-studio-teal">Venture</span>Forge
               </h1>
-            </a>
+            </Link>
           </div>
           
           <div className="-mr-2 -my-2 md:hidden">
@@ -38,21 +39,27 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden md:flex space-x-10">
-            <a href="#how-it-works" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+            <Link to="/" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+              Home
+            </Link>
+            <Link to="/about" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+              {t('navAbout')}
+            </Link>
+            <Link to="/projects" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+              {t('navProjects')}
+            </Link>
+            <a href="/#how-it-works" className="text-base font-medium text-gray-700 hover:text-studio-blue">
               {t('navHowItWorks')}
             </a>
-            <a href="#benefits" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+            <a href="/#benefits" className="text-base font-medium text-gray-700 hover:text-studio-blue">
               {t('navBenefits')}
             </a>
-            <a href="#projects" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navProjects')}
-            </a>
-            <a href="#about" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navAbout')}
-            </a>
-            <a href="#faq" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+            <a href="/#faq" className="text-base font-medium text-gray-700 hover:text-studio-blue">
               {t('navFaq')}
             </a>
+            <Link to="/contact" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+              Contact
+            </Link>
           </nav>
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -60,9 +67,11 @@ const Navbar = () => {
             <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
               {t('login')}
             </Button>
-            <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
-              {t('submitProject')}
-            </Button>
+            <Link to="/contact">
+              <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
+                {t('submitProject')}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -91,8 +100,35 @@ const Navbar = () => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
+                  <Link
+                    to="/"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <span className="text-base font-medium text-gray-700">
+                      Home
+                    </span>
+                  </Link>
+                  <Link
+                    to="/about"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <span className="text-base font-medium text-gray-700">
+                      {t('navAbout')}
+                    </span>
+                  </Link>
+                  <Link
+                    to="/projects"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <span className="text-base font-medium text-gray-700">
+                      {t('navProjects')}
+                    </span>
+                  </Link>
                   <a
-                    href="#how-it-works"
+                    href="/#how-it-works"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -101,7 +137,7 @@ const Navbar = () => {
                     </span>
                   </a>
                   <a
-                    href="#benefits"
+                    href="/#benefits"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -110,25 +146,7 @@ const Navbar = () => {
                     </span>
                   </a>
                   <a
-                    href="#projects"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t('navProjects')}
-                    </span>
-                  </a>
-                  <a
-                    href="#about"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t('navAbout')}
-                    </span>
-                  </a>
-                  <a
-                    href="#faq"
+                    href="/#faq"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -136,6 +154,15 @@ const Navbar = () => {
                       {t('navFaq')}
                     </span>
                   </a>
+                  <Link
+                    to="/contact"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <span className="text-base font-medium text-gray-700">
+                      Contact
+                    </span>
+                  </Link>
                 </nav>
               </div>
             </div>
@@ -147,9 +174,11 @@ const Navbar = () => {
                 <Button variant="ghost" className="text-studio-blue hover:text-studio-teal justify-center">
                   {t('login')}
                 </Button>
-                <Button className="w-full bg-studio-blue hover:bg-studio-teal">
-                  {t('submitProject')}
-                </Button>
+                <Link to="/contact" className="w-full">
+                  <Button className="w-full bg-studio-blue hover:bg-studio-teal">
+                    {t('submitProject')}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
