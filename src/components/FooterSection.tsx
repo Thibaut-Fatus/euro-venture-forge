@@ -6,26 +6,26 @@ import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/context/LanguageContext";
 
 const FooterSection = () => {
-  const { toast } = useToast();
+  // const { toast } = useToast();
     const { t } = useLanguage();
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+  // const handleSubscribe = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   const form = e.target as HTMLFormElement;
+  //   const email = (form.elements.namedItem('email') as HTMLInputElement).value;
 
-    toast({
-      title: "Subscribed!",
-      description: `You've been added to our newsletter with ${email}`,
-    });
+  //   toast({
+  //     title: "Subscribed!",
+  //     description: `You've been added to our newsletter with ${email}`,
+  //   });
 
-    form.reset();
-  };
+  //   form.reset();
+  // };
 
   return (
     <footer id="contact" className="bg-studio-navy text-white pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">Techify</h3>
             <p className="text-gray-300 mb-6">
@@ -80,12 +80,12 @@ const FooterSection = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-studio-teal mr-3" />
-                <span className="text-gray-300">info@Techify.eu</span>
+                <span className="text-gray-300">info@techify.eu</span>
               </li>
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
             <p className="text-gray-300 mb-4">
               Subscribe to our newsletter for the latest updates and opportunities.
@@ -102,7 +102,7 @@ const FooterSection = () => {
                 Subscribe
               </Button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
 

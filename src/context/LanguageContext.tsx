@@ -11,11 +11,11 @@ type Language = {
 const languages: Language[] = [
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
-  { code: "es", name: "Español", flag: "🇪🇸" },
+  // { code: "es", name: "Español", flag: "🇪🇸" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
-  { code: "it", name: "Italiano", flag: "🇮🇹" },
-  { code: "pt", name: "Português", flag: "🇵🇹" },
-  { code: "nl", name: "Nederlands", flag: "🇳🇱" },
+  // { code: "it", name: "Italiano", flag: "🇮🇹" },
+  // { code: "pt", name: "Português", flag: "🇵🇹" },
+  // { code: "nl", name: "Nederlands", flag: "🇳🇱" },
 ];
 
 type LanguageContextType = {

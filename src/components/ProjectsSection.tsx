@@ -3,36 +3,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
+import { getProjects } from "@/translations/projects";
 
 const ProjectsSection = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
 
-  const projects = [
-    {
-      title: "Appointment Scheduler",
-      description: "An intelligent scheduling system for service-based businesses that reduces no-shows by 35%",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Service Industry",
-      status: "Live",
-      partners: 16,
-    },
-    {
-      title: "Supply Chain Tracker",
-      description: "Track inventory and shipments in real-time with this European-hosted logistics platform",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Retail & Distribution",
-      status: "Beta",
-      partners: 8,
-    },
-    {
-      title: "Client Portal",
-      description: "Secure client management system with document sharing and payment processing",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      category: "Professional Services",
-      status: "Development",
-      partners: 12,
-    },
-  ];
+  const [p1, p2, p3, ..._rest] = getProjects({ languageCode: currentLanguage.code });
+  const firstThreeProjects = [p1,p2,p3];
 
   return (
     <section id="projects" className="bg-gray-50 py-16 md:py-24">
@@ -45,13 +22,13 @@ const ProjectsSection = () => {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
+          {firstThreeProjects.filter(p => !!p).map((project, index) => (
             <Card key={index} className="overflow-hidden flex flex-col h-full border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -60,8 +37,8 @@ const ProjectsSection = () => {
                     {project.category}
                   </Badge>
                   <Badge className={
-                    project.status === "Live" ? "bg-green-500" : 
-                    project.status === "Beta" ? "bg-amber-500" : 
+                    project.status === "Live" ? "bg-green-500" :
+                    project.status === "Beta" ? "bg-amber-500" :
                     "bg-blue-500"
                   }>
                     {project.status}
@@ -78,7 +55,9 @@ const ProjectsSection = () => {
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full">{t('learnMoreBtn')}</Button>
+                <a className="font-medium w-full" href={project.website} target="_blank" rel="noopener noreferrer">
+                  {project.website}
+                </a>
               </CardFooter>
             </Card>
           ))}

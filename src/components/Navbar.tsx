@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/">
               <span className="sr-only">Techify</span>
               <h1 className="text-2xl font-bold text-studio-navy">
-                Euro<span className="text-studio-teal">Venture</span>Forge
+                Tec<span className="text-studio-teal">h</span>ify
               </h1>
             </Link>
           </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <h1 className="text-xl font-bold text-studio-navy">
-                    Euro<span className="text-studio-teal">Venture</span>Forge
+                    Tec<span className="text-studio-teal">h</span>ify
                   </h1>
                 </div>
                 <div className="-mr-2">
