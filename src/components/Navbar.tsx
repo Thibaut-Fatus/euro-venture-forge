@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="/">
-              <span className="sr-only">EuroVentureForge</span>
+              <span className="sr-only">Techify</span>
               <h1 className="text-2xl font-bold text-studio-navy">
                 Euro<span className="text-studio-teal">Venture</span>Forge
               </h1>

@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/euro-venture-forge/',
+  base: '/techify/',
   plugins: [
     react(),
     // mode === 'development' &&

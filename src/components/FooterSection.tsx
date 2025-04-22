@@ -27,7 +27,7 @@ const FooterSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">EuroVentureForge</h3>
+            <h3 className="text-xl font-bold mb-4">Techify</h3>
             <p className="text-gray-300 mb-6">
               Transforming small business challenges into shared opportunities across Europe.
             </p>
@@ -80,7 +80,7 @@ const FooterSection = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-studio-teal mr-3" />
-                <span className="text-gray-300">info@euroventureforge.eu</span>
+                <span className="text-gray-300">info@Techify.eu</span>
               </li>
             </ul>
           </div>
@@ -109,7 +109,7 @@ const FooterSection = () => {
       <div className="border-t border-gray-800 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} EuroVentureForge. All rights reserved.
+            &copy; {new Date().getFullYear()} Techify. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">Privacy Policy</a>
