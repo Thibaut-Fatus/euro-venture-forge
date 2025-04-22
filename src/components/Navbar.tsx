@@ -40,7 +40,7 @@ const Navbar = () => {
 
           <nav className="hidden md:flex space-x-10">
             <Link to="/" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              Home
+            {t('home')}
             </Link>
             <Link to="/about" className="text-base font-medium text-gray-700 hover:text-studio-blue">
               {t('navAbout')}

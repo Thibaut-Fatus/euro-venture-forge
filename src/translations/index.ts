@@ -1,6 +1,7 @@
 
 export interface Translations {
   // Navigation
+  home: string;
   navHowItWorks: string;
   navBenefits: string;
   navProjects: string;
@@ -118,6 +119,7 @@ export interface Translations {
 
 const en: Translations = {
   // Navigation
+  home: "Home",
   navHowItWorks: "How It Works",
   navBenefits: "Benefits",
   navProjects: "Projects",
@@ -129,7 +131,7 @@ const en: Translations = {
   // Hero section
   heroTitle1: "Transforming Business Challenges Into",
   heroTitle2: "Shared Opportunities",
-  heroSubtitle: "We develop custom tech solutions for small European businesses and share the revenue when deployed to others with similar needs.",
+  heroSubtitle: "We develop custom tech solutions for small & local European businesses and share the revenue when deployed to others with similar needs.",
   learnMore: "Learn More",
 
   // How it works section
@@ -189,7 +191,7 @@ const en: Translations = {
   aboutHeroTitle: "About Techify",
   aboutHeroSubtitle: "Building European digital sovereignty through collaborative innovation",
   ourStoryTitle: "Our Story",
-  ourStoryContent1: "Founded in 2022 by a team of European tech leaders, Techify was born from a simple observation: small businesses across Europe face similar technology challenges but lack affordable, sovereignty-focused solutions.",
+  ourStoryContent1: "Founded in 2024 by a team of European tech leaders, Techify was born from a simple observation: small businesses across Europe face similar technology challenges but lack affordable, sovereignty-focused solutions.",
   ourStoryContent2: "We created a model where businesses could pool resources to develop technology that works for everyone while keeping data and infrastructure under European control.",
   ourMissionTitle: "Our Mission",
   ourMissionContent: "We aim to democratize access to custom technology solutions for European small businesses while building digital sovereignty and creating a sustainable ecosystem where innovation benefits all participants.",
@@ -235,6 +237,7 @@ const en: Translations = {
 
 const fr: Translations = {
   // Navigation
+  home: "Accueil",
   navHowItWorks: "Comment ça marche",
   navBenefits: "Avantages",
   navProjects: "Projets",
@@ -246,7 +249,7 @@ const fr: Translations = {
   // Hero section
   heroTitle1: "Transformer les défis des entreprises en",
   heroTitle2: "opportunités partagées",
-  heroSubtitle: "Nous développons des solutions technologiques sur mesure pour les petites entreprises européennes et partageons les revenus lorsqu'elles sont déployées pour d'autres ayant des besoins similaires.",
+  heroSubtitle: "Nous créons des outils sur mesure pour les petites entreprises locales et partageons les revenus lorsqu'ils sont adoptés par d'autres entreprises ayant des besoins similaires.",
   learnMore: "En savoir plus",
 
   // How it works section
@@ -263,7 +266,7 @@ const fr: Translations = {
 
   // Benefits section
   benefits: "Avantages",
-  benefitsSubtitle: "Pourquoi les petites entreprises à travers l'Europe choisissent de s'associer à nous",
+  benefitsSubtitle: "Pourquoi les petites entreprises choisissent de s'associer à nous",
   affordableSolutions: "Solutions abordables",
   affordableSolutionsDesc: "Obtenez une technologie personnalisée à une fraction du coût de développement typique grâce à notre modèle partagé.",
   save: "Économisez 60%+",
@@ -303,10 +306,10 @@ const fr: Translations = {
   contactUs: "Contactez-nous",
 
   // About page
-  aboutHeroTitle: "À propos d'Techify",
+  aboutHeroTitle: "À propos de Techify",
   aboutHeroSubtitle: "Construire la souveraineté numérique européenne par l'innovation collaborative",
   ourStoryTitle: "Notre Histoire",
-  ourStoryContent1: "Fondée en 2022 par une équipe de leaders technologiques européens, Techify est née d'une simple observation : les petites entreprises à travers l'Europe font face à des défis technologiques similaires mais manquent de solutions abordables et axées sur la souveraineté.",
+  ourStoryContent1: "Fondée en 2024 par une équipe de leaders technologiques européens, Techify est née d'une simple observation : les petites entreprises à travers l'Europe font face à des défis technologiques similaires mais manquent de solutions abordables.",
   ourStoryContent2: "Nous avons créé un modèle où les entreprises peuvent mettre en commun leurs ressources pour développer une technologie qui fonctionne pour tous tout en gardant les données et l'infrastructure sous contrôle européen.",
   ourMissionTitle: "Notre Mission",
   ourMissionContent: "Nous visons à démocratiser l'accès aux solutions technologiques personnalisées pour les petites entreprises européennes tout en construisant la souveraineté numérique et en créant un écosystème durable où l'innovation profite à tous les participants.",
@@ -352,6 +355,7 @@ const fr: Translations = {
 
 const de: Translations = {
   // Navigation
+  home: "Home",
   navHowItWorks: "Wie es funktioniert",
   navBenefits: "Vorteile",
   navProjects: "Projekte",
@@ -423,7 +427,7 @@ const de: Translations = {
   aboutHeroTitle: "Über Techify",
   aboutHeroSubtitle: "Aufbau europäischer digitaler Souveränität durch kollaborative Innovation",
   ourStoryTitle: "Unsere Geschichte",
-  ourStoryContent1: "Gegründet im Jahr 2022 von einem Team europäischer Technologieführer, entstand Techify aus einer einfachen Beobachtung: kleine Unternehmen in ganz Europa stehen vor ähnlichen technologischen Herausforderungen, aber es fehlt an erschwinglichen, auf Souveränität ausgerichteten Lösungen.",
+  ourStoryContent1: "Gegründet im Jahr 2024 von einem Team europäischer Technologieführer, entstand Techify aus einer einfachen Beobachtung: kleine Unternehmen in ganz Europa stehen vor ähnlichen technologischen Herausforderungen, aber es fehlt an erschwinglichen, auf Souveränität ausgerichteten Lösungen.",
   ourStoryContent2: "Wir haben ein Modell geschaffen, bei dem Unternehmen Ressourcen bündeln können, um Technologie zu entwickeln, die für alle funktioniert und gleichzeitig Daten und Infrastruktur unter europäischer Kontrolle hält.",
   ourMissionTitle: "Unsere Mission",
   ourMissionContent: "Unser Ziel ist es, den Zugang zu maßgeschneiderten Technologielösungen für europäische Kleinunternehmen zu demokratisieren, gleichzeitig die digitale Souveränität aufzubauen und ein nachhaltiges Ökosystem zu schaffen, in dem Innovation allen Teilnehmern zugute kommt.",

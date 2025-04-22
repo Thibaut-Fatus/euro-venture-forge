@@ -3,7 +3,6 @@ import { useLanguage } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
 
 const About = () => {
   const { t } = useLanguage();
@@ -11,7 +10,7 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow pt-16">
         {/* Hero Section */}
         <section className="bg-studio-navy text-white pt-24 pb-16">
@@ -38,9 +37,9 @@ const About = () => {
               </div>
               <div className="relative">
                 <div className="aspect-video bg-gradient-to-br from-studio-navy via-studio-blue to-studio-teal rounded-lg shadow-lg"></div>
-                <img 
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" 
-                  alt="Team meeting" 
+                <img
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+                  alt="Team meeting"
                   className="absolute -bottom-6 -right-6 w-3/4 h-auto rounded-lg shadow-xl border-4 border-white"
                 />
               </div>
@@ -62,7 +61,7 @@ const About = () => {
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-studio-navy mb-10 text-center">{t('ourValuesTitle')}</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="h-12 w-12 rounded-full bg-studio-blue/10 flex items-center justify-center mb-6">
@@ -71,7 +70,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-4 text-studio-navy">{t('value1Title')}</h3>
                 <p className="text-gray-600">{t('value1Content')}</p>
               </div>
-              
+
               <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="h-12 w-12 rounded-full bg-studio-blue/10 flex items-center justify-center mb-6">
                   <span className="text-2xl">🤝</span>
@@ -79,7 +78,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-4 text-studio-navy">{t('value2Title')}</h3>
                 <p className="text-gray-600">{t('value2Content')}</p>
               </div>
-              
+
               <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="h-12 w-12 rounded-full bg-studio-blue/10 flex items-center justify-center mb-6">
                   <span className="text-2xl">🌱</span>
@@ -106,18 +105,18 @@ const About = () => {
                 </Button>
               </div>
             </div>
-            
+
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="flex flex-col items-center">
-                <div className="text-4xl font-bold text-studio-teal">20+</div>
+                <div className="text-4xl font-bold text-studio-teal">10+</div>
                 <div className="text-sm text-gray-300 mt-1">Projects Completed</div>
               </div>
               <div className="flex flex-col items-center">
-                <div className="text-4xl font-bold text-studio-teal">150+</div>
+                <div className="text-4xl font-bold text-studio-teal">45+</div>
                 <div className="text-sm text-gray-300 mt-1">Business Partners</div>
               </div>
               <div className="flex flex-col items-center">
-                <div className="text-4xl font-bold text-studio-teal">15</div>
+                <div className="text-4xl font-bold text-studio-teal">3</div>
                 <div className="text-sm text-gray-300 mt-1">EU Countries</div>
               </div>
               <div className="flex flex-col items-center">
@@ -128,7 +127,7 @@ const About = () => {
           </div>
         </section>
       </main>
-      
+
       <FooterSection />
     </div>
   );

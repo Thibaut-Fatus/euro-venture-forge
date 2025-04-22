@@ -16,11 +16,11 @@ const BenefitsSection = () => {
       label: t('save'),
     },
     {
-      title: t('europeanSovereignty'),
-      description: t('europeanSovereigntyDesc'),
-      icon: Globe,
-      color: "bg-blue-100 text-blue-700",
-      label: t('euFirst'),
+      title: t('bespokeDevelopment'),
+      description: t('bespokeDevelopmentDesc'),
+      icon: Code,
+      color: "bg-amber-100 text-amber-700",
+      label: t('customBuilt'),
     },
     {
       title: t('recurringRevenue'),
@@ -30,11 +30,11 @@ const BenefitsSection = () => {
       label: t('profitShare'),
     },
     {
-      title: t('bespokeDevelopment'),
-      description: t('bespokeDevelopmentDesc'),
-      icon: Code,
-      color: "bg-amber-100 text-amber-700",
-      label: t('customBuilt'),
+      title: t('europeanSovereignty'),
+      description: t('europeanSovereigntyDesc'),
+      icon: Globe,
+      color: "bg-blue-100 text-blue-700",
+      label: t('euFirst'),
     },
   ];
 
