@@ -100,7 +100,7 @@ export interface Translations {
   sortPopular: string;
   projectCardStatus: string;
   projectCardPartners: string;
-  
+
   // Contact page
   contactHeroTitle: string;
   contactHeroSubtitle: string;
@@ -217,7 +217,7 @@ const en: Translations = {
   sortPopular: "Most Popular",
   projectCardStatus: "Status:",
   projectCardPartners: "Partners:",
-  
+
   // Contact page
   contactHeroTitle: "Get in Touch",
   contactHeroSubtitle: "Have questions or want to submit a challenge? We're here to help.",
@@ -227,7 +227,7 @@ const en: Translations = {
   contactFormMessage: "Your Message",
   contactFormSubmit: "Send Message",
   contactOfficeTitle: "Our Office",
-  contactOfficeAddress: "Rue de la Science 23, 1040 Brussels, Belgium",
+  contactOfficeAddress: "Paris, France",
   contactOfficeHours: "Monday-Friday: 9am - 5pm CET",
   contactEmailUs: "Email Us",
   contactCallUs: "Call Us"
@@ -334,7 +334,7 @@ const fr: Translations = {
   sortPopular: "Plus populaire",
   projectCardStatus: "Statut :",
   projectCardPartners: "Partenaires :",
-  
+
   // Contact page
   contactHeroTitle: "Contactez-nous",
   contactHeroSubtitle: "Vous avez des questions ou souhaitez soumettre un défi ? Nous sommes là pour vous aider.",
@@ -344,7 +344,7 @@ const fr: Translations = {
   contactFormMessage: "Votre message",
   contactFormSubmit: "Envoyer le message",
   contactOfficeTitle: "Notre bureau",
-  contactOfficeAddress: "Rue de la Science 23, 1040 Bruxelles, Belgique",
+  contactOfficeAddress: "Paris, France",
   contactOfficeHours: "Lundi-Vendredi : 9h - 17h CET",
   contactEmailUs: "Envoyez-nous un e-mail",
   contactCallUs: "Appelez-nous"
@@ -451,7 +451,7 @@ const de: Translations = {
   sortPopular: "Beliebteste",
   projectCardStatus: "Status:",
   projectCardPartners: "Partner:",
-  
+
   // Contact page
   contactHeroTitle: "Kontaktieren Sie uns",
   contactHeroSubtitle: "Haben Sie Fragen oder möchten Sie eine Herausforderung einreichen? Wir sind hier, um zu helfen.",
@@ -461,7 +461,7 @@ const de: Translations = {
   contactFormMessage: "Ihre Nachricht",
   contactFormSubmit: "Nachricht senden",
   contactOfficeTitle: "Unser Büro",
-  contactOfficeAddress: "Rue de la Science 23, 1040 Brüssel, Belgien",
+  contactOfficeAddress: "Paris, France",
   contactOfficeHours: "Montag-Freitag: 9-17 Uhr MEZ",
   contactEmailUs: "E-Mail senden",
   contactCallUs: "Rufen Sie uns an"

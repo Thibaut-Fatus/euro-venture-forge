@@ -22,7 +22,7 @@ const Navbar = () => {
               </h1>
             </Link>
           </div>
-          
+
           <div className="-mr-2 -my-2 md:hidden">
             <Button
               variant="ghost"
@@ -37,7 +37,7 @@ const Navbar = () => {
               )}
             </Button>
           </div>
-          
+
           <nav className="hidden md:flex space-x-10">
             <Link to="/" className="text-base font-medium text-gray-700 hover:text-studio-blue">
               Home
@@ -61,12 +61,12 @@ const Navbar = () => {
               Contact
             </Link>
           </nav>
-          
+
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <LanguageSelector />
-            <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
+            {/* <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
               {t('login')}
-            </Button>
+            </Button> */}
             <Link to="/contact">
               <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
                 {t('submitProject')}

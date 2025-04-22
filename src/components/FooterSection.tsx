@@ -3,20 +3,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import { useLanguage } from "@/context/LanguageContext";
 
 const FooterSection = () => {
   const { toast } = useToast();
-  
+    const { t } = useLanguage();
+
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const email = (form.elements.namedItem('email') as HTMLInputElement).value;
-    
+
     toast({
       title: "Subscribed!",
       description: `You've been added to our newsletter with ${email}`,
     });
-    
+
     form.reset();
   };
 
@@ -50,7 +52,7 @@ const FooterSection = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -62,15 +64,14 @@ const FooterSection = () => {
               <li><a href="#submit" className="text-gray-300 hover:text-white">Submit Project</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-studio-teal mr-3 mt-1" />
                 <span className="text-gray-300">
-                  Rue de la Science 23<br />
-                  1040 Brussels, Belgium
+                  {t('contactOfficeAddress')}
                 </span>
               </li>
               <li className="flex items-center">
@@ -83,7 +84,7 @@ const FooterSection = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
             <p className="text-gray-300 mb-4">
@@ -104,7 +105,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="border-t border-gray-800 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
