@@ -54,7 +54,7 @@ const projectsTranslation = {
 const projects = [
   {
     id: 1,
-    image: "/images/track-loisirs.png",
+    image: "/techify/images/track-loisirs.png",
     status: "Live",
     partners: 16,
     website: 'https://www.trackloisirs.com/',
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "/images/rentatap.png",
+    image: "/techify/images/rentatap.png",
     status: "Live",
     partners: 7,
     website: 'https://www.location-tireuse.fr/',
