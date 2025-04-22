@@ -54,19 +54,19 @@ const projectsTranslation = {
 const projects = [
   {
     id: 1,
-    image: "/techify/images/track-loisirs.png",
-    status: "Live",
-    partners: 16,
-    website: 'https://www.trackloisirs.com/',
-    date: "2023-11-15"
-  },
-  {
-    id: 2,
     image: "/techify/images/rentatap.png",
     status: "Live",
     partners: 7,
     website: 'https://www.location-tireuse.fr/',
     date: "2024-01-22"
+  },
+  {
+    id: 2,
+    image: "/techify/images/track-loisirs.png",
+    status: "Live",
+    partners: 16,
+    website: 'https://www.trackloisirs.com/',
+    date: "2023-11-15"
   },
 ];
 
