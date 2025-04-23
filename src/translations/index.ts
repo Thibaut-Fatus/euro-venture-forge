@@ -219,14 +219,14 @@ const en: Translations = {
   faqQuestion2: "How much does it cost to submit a challenge?",
   faqAnswer2:
     "Submission is completely free. If your challenge is selected, we'll discuss a cost-sharing model that's significantly lower than traditional custom development.",
-  faqQuestion3: "Who owns the intellectual property of the solution?",
-  faqAnswer3:
-    "Techify retains the IP of the core solution, but you receive a perpetual license to use it. This allows us to offer the solution to other businesses while ensuring you always have access.",
-  faqQuestion4: "How is the revenue sharing calculated?",
-  faqAnswer4:
-    "Revenue sharing typically represents 25 to 50% of the margin from subscription fees paid by future clients using the solution developed from your project. The exact percentage depends on the complexity and the distribution model adopted.",
-  faqQuestion5: "How long does the development process take?",
+  faqQuestion5: "Who owns the intellectual property of the solution?",
   faqAnswer5:
+    "Techify retains the IP of the core solution, but you receive a perpetual license to use it. This allows us to offer the solution to other businesses while ensuring you always have access.",
+  faqQuestion3: "How is the revenue sharing calculated?",
+  faqAnswer3:
+    "Revenue sharing typically represents 25 to 50% of the margin from subscription fees paid by future clients using the solution developed from your project. The exact percentage depends on the complexity and the distribution model adopted.",
+  faqQuestion4: "How long does the development process take?",
+  faqAnswer4:
     "Development timelines vary based on complexity, but most solutions reach initial deployment within 2-4 months. We follow an agile methodology with regular updates and testing milestones.",
   faqQuestion6: "What happens if my needs change after development?",
   faqAnswer6:
@@ -406,15 +406,15 @@ const fr: Translations = {
   faqQuestion2: "Combien coûte la soumission d'un projet ?",
   faqAnswer2:
     "La soumission est entièrement gratuite. Si votre projet est sélectionné, nous discuterons d'un modèle de partage des coûts significativement inférieur au développement personnalisé traditionnel.",
-  faqQuestion3: "Qui possède la propriété intellectuelle de la solution ?",
+  faqQuestion3: "Comment le partage des revenus est-il calculé ?",
   faqAnswer3:
-    "Techify conserve la propriété intellectuelle de la solution de base, mais vous recevez une licence perpétuelle pour l'utiliser. Cela nous permet de proposer la solution à d'autres entreprises tout en vous garantissant un accès permanent.",
-  faqQuestion4: "Comment le partage des revenus est-il calculé ?",
-  faqAnswer4:
     "Le partage des revenus représente généralement 25 à 50 % de la marge issue des frais d'abonnement payés par les futurs clients utilisant la solution développée à partir de votre projet. Le pourcentage exact dépend de la complexité et du modèle de distribution adopté.",
-  faqQuestion5: "Combien de temps dure le processus de développement ?",
-  faqAnswer5:
+  faqQuestion4: "Combien de temps dure le processus de développement ?",
+  faqAnswer4:
     "Les délais de développement varient en fonction de la complexité, mais la plupart des solutions atteignent le déploiement initial dans un délai de 2 à 4 mois. Nous suivons une méthodologie agile avec des mises à jour régulières et des étapes de test.",
+  faqQuestion5: "Qui possède la propriété intellectuelle de la solution ?",
+  faqAnswer5:
+    "Techify conserve la propriété intellectuelle de la solution de base, mais vous recevez une licence perpétuelle pour l'utiliser. Cela nous permet de proposer la solution à d'autres entreprises tout en vous garantissant un accès permanent.",
   faqQuestion6:
     "Que se passe-t-il si mes besoins changent après le développement ?",
   faqAnswer6:
@@ -594,14 +594,14 @@ const de: Translations = {
   faqQuestion2: "Wie viel kostet es, eine Herausforderung einzureichen?",
   faqAnswer2:
     "Die Einreichung ist völlig kostenlos. Wenn Ihre Herausforderung ausgewählt wird, werden wir ein Kostenteilungsmodell besprechen, das deutlich niedriger ist als bei traditioneller kundenspezifischer Entwicklung.",
-  faqQuestion3: "Wer besitzt das geistige Eigentum an der Lösung?",
-  faqAnswer3:
-    "Techify behält das geistige Eigentum an der Kernlösung, aber Sie erhalten eine unbefristete Lizenz zur Nutzung. Dies ermöglicht es uns, die Lösung anderen Unternehmen anzubieten und gleichzeitig sicherzustellen, dass Sie immer Zugriff haben.",
-  faqQuestion4: "Wie wird die Umsatzbeteiligung berechnet?",
-  faqAnswer4:
-    "Die Umsatzbeteiligung beträgt in der Regel 25 bis 50 % der Marge aus den Abonnementgebühren, die von zukünftigen Kunden gezahlt werden, die die aus Ihrem Projekt entwickelte Lösung nutzen. Der genaue Prozentsatz hängt von der Komplexität und dem gewählten Vertriebsmodell ab.",
-  faqQuestion5: "Wie lange dauert der Entwicklungsprozess?",
+  faqQuestion5: "Wer besitzt das geistige Eigentum an der Lösung?",
   faqAnswer5:
+    "Techify behält das geistige Eigentum an der Kernlösung, aber Sie erhalten eine unbefristete Lizenz zur Nutzung. Dies ermöglicht es uns, die Lösung anderen Unternehmen anzubieten und gleichzeitig sicherzustellen, dass Sie immer Zugriff haben.",
+  faqQuestion3: "Wie wird die Umsatzbeteiligung berechnet?",
+  faqAnswer3:
+    "Die Umsatzbeteiligung beträgt in der Regel 25 bis 50 % der Marge aus den Abonnementgebühren, die von zukünftigen Kunden gezahlt werden, die die aus Ihrem Projekt entwickelte Lösung nutzen. Der genaue Prozentsatz hängt von der Komplexität und dem gewählten Vertriebsmodell ab.",
+  faqQuestion4: "Wie lange dauert der Entwicklungsprozess?",
+  faqAnswer4:
     "Die Entwicklungszeiträume variieren je nach Komplexität, aber die meisten Lösungen erreichen die erste Bereitstellung innerhalb von 2-4 Monaten. Wir folgen einer agilen Methodik mit regelmäßigen Updates und Testmeilensteinen.",
   faqQuestion6:
     "Was passiert, wenn sich meine Bedürfnisse nach der Entwicklung ändern?",
