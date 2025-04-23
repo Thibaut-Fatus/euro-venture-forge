@@ -122,6 +122,28 @@ export interface Translations {
   sovereigntyPledge: string;
   sovereigntyMatters: string;
   sovereigntyMattersContent: string;
+
+  // Submission
+  submissionTitle: string;
+  submissionSubtitle: string;
+  submissionFormTitle: string;
+  submissionFormSubtitle: string;
+  submissionFormBusinessName: string;
+  submissionFormBusinessNamePlaceholder: string;
+  submissionFormBusinessContact: string;
+  submissionFormBusinessContactPlaceholder: string;
+  submissionFormBusinessEmail: string;
+  submissionFormBusinessEmailPlaceholder: string;
+  submissionFormBusinessIndustry: string;
+  submissionFormBusinessIndustryPlaceholder: string;
+  submissionFormBusinessDescription: string;
+  submissionFormBusinessDescriptionPlaceholder: string;
+  submissionButton: string;
+  submissionSubmitting: string;
+  submissionFeedback: string;
+  submissionFeedbackMessage: string;
+  submissionPolicy: string;
+  submissionPrivacy: string;
 }
 
 const en: Translations = {
@@ -202,7 +224,7 @@ const en: Translations = {
     "Techify retains the IP of the core solution, but you receive a perpetual license to use it. This allows us to offer the solution to other businesses while ensuring you always have access.",
   faqQuestion4: "How is the revenue sharing calculated?",
   faqAnswer4:
-    "Revenue sharing is typically 15-25% of the subscription fees paid by future customers using the solution developed from your challenge. The exact percentage depends on the complexity and uniqueness of your specific requirements.",
+    "Revenue sharing typically represents 25 to 50% of the margin from subscription fees paid by future clients using the solution developed from your project. The exact percentage depends on the complexity and the distribution model adopted.",
   faqQuestion5: "How long does the development process take?",
   faqAnswer5:
     "Development timelines vary based on complexity, but most solutions reach initial deployment within 2-4 months. We follow an agile methodology with regular updates and testing milestones.",
@@ -281,6 +303,34 @@ const en: Translations = {
   sovereigntyMatters: "Why European Sovereignty Matters",
   sovereigntyMattersContent:
     "In today's digital economy, controlling your business data and technology stack is more important than ever. European sovereignty ensures:",
+
+  // Submission
+  submissionTitle: "Submit Your Challenge",
+  submissionSubtitle:
+    "Share your business pain point with us. If selected, we'll develop a solution at minimal cost and split the revenue when it's marketed to others.",
+  submissionFormTitle: "Challenge Submission Form",
+  submissionFormSubtitle:
+    "Tell us about your business and the problem you'd like solved.",
+  submissionFormBusinessName: "Business Name",
+  submissionFormBusinessNamePlaceholder: "Your Company Ltd.",
+  submissionFormBusinessContact: "Contact Name",
+  submissionFormBusinessContactPlaceholder: "John Doe",
+  submissionFormBusinessEmail: "Email",
+  submissionFormBusinessEmailPlaceholder: "your.email@example.com",
+  submissionFormBusinessIndustry: "Industry",
+  submissionFormBusinessIndustryPlaceholder: "Rentals",
+  submissionFormBusinessDescription: "Describe your challenge",
+  submissionFormBusinessDescriptionPlaceholder:
+    "Tell us about the problem you're facing and how it impacts your business...",
+  submissionButton: "Submit Challenge",
+  submissionSubmitting: "Submitting...",
+  submissionFeedback: "Project Submitted!",
+  submissionFeedbackMessage:
+    "We'll review your challenge and get back to you within 3 business days.",
+  submissionPolicy:
+    "By submitting, you agree to our Terms of Service and Privacy Policy.",
+  submissionPrivacy:
+    "Your information is kept confidential and only used to evaluate your project.",
 };
 
 const fr: Translations = {
@@ -305,12 +355,12 @@ const fr: Translations = {
   howItWorks: "Comment ça marche",
   howItWorksSubtitle:
     "Notre approche collaborative pour créer des solutions technologiques durables",
-  submitChallenge: "Soumettez votre défi",
+  submitChallenge: "Soumettez votre projet",
   submitChallengeDesc:
     "Partagez le problème de votre entreprise avec notre équipe via un processus de soumission simple.",
   validationSelection: "Validation et sélection",
   validationSelectionDesc:
-    "Nos experts évaluent le potentiel d'application plus large et sélectionnent les défis prometteurs.",
+    "Nos experts évaluent le potentiel d'application plus large et sélectionnent les projets prometteurs.",
   development: "Développement collaboratif",
   developmentDesc:
     "Nous construisons une solution adaptée à votre entreprise avec des retours et des tests continus.",
@@ -352,16 +402,16 @@ const fr: Translations = {
     "Obtenez des réponses aux questions courantes sur notre modèle de développement collaboratif",
   faqQuestion1: "Comment sélectionnez-vous les projets à développer ?",
   faqAnswer1:
-    "Nous évaluons les soumissions en fonction de la spécificité du défi, du potentiel d'application plus large à des entreprises similaires et de la faisabilité technique. Nous recherchons des défis qui, une fois résolus, pourraient bénéficier à plusieurs entreprises du même secteur.",
-  faqQuestion2: "Combien coûte la soumission d'un défi ?",
+    "Nous évaluons les soumissions en fonction de la spécificité du projet, du potentiel d'application plus large à des entreprises similaires et de la faisabilité technique. Nous recherchons des défis qui, une fois résolus, pourraient bénéficier à plusieurs entreprises du même secteur.",
+  faqQuestion2: "Combien coûte la soumission d'un projet ?",
   faqAnswer2:
-    "La soumission est entièrement gratuite. Si votre défi est sélectionné, nous discuterons d'un modèle de partage des coûts significativement inférieur au développement personnalisé traditionnel.",
+    "La soumission est entièrement gratuite. Si votre projet est sélectionné, nous discuterons d'un modèle de partage des coûts significativement inférieur au développement personnalisé traditionnel.",
   faqQuestion3: "Qui possède la propriété intellectuelle de la solution ?",
   faqAnswer3:
     "Techify conserve la propriété intellectuelle de la solution de base, mais vous recevez une licence perpétuelle pour l'utiliser. Cela nous permet de proposer la solution à d'autres entreprises tout en vous garantissant un accès permanent.",
   faqQuestion4: "Comment le partage des revenus est-il calculé ?",
   faqAnswer4:
-    "Le partage des revenus représente généralement 15 à 25 % des frais d'abonnement payés par les futurs clients utilisant la solution développée à partir de votre défi. Le pourcentage exact dépend de la complexité et de l'unicité de vos exigences spécifiques.",
+    "Le partage des revenus représente généralement 25 à 50 % de la marge issue des frais d'abonnement payés par les futurs clients utilisant la solution développée à partir de votre projet. Le pourcentage exact dépend de la complexité et du modèle de distribution adopté.",
   faqQuestion5: "Combien de temps dure le processus de développement ?",
   faqAnswer5:
     "Les délais de développement varient en fonction de la complexité, mais la plupart des solutions atteignent le déploiement initial dans un délai de 2 à 4 mois. Nous suivons une méthodologie agile avec des mises à jour régulières et des étapes de test.",
@@ -419,7 +469,7 @@ const fr: Translations = {
   // Contact page
   contactHeroTitle: "Contactez-nous",
   contactHeroSubtitle:
-    "Vous avez des questions ou souhaitez soumettre un défi ? Nous sommes là pour vous aider.",
+    "Vous avez des questions ou souhaitez soumettre un projet ? Nous sommes là pour vous aider.",
   contactFormName: "Votre nom",
   contactFormEmail: "Adresse e-mail",
   contactFormSubject: "Sujet",
@@ -441,6 +491,34 @@ const fr: Translations = {
   sovereigntyMatters: "Pourquoi la Souveraineté Européenne est Importante",
   sovereigntyMattersContent:
     "Dans l'économie numérique actuelle, contrôler vos données d'entreprise et votre pile technologique est plus important que jamais. La souveraineté européenne garantit :",
+
+  // Submission
+  submissionTitle: "Soumettez Votre Projet",
+  submissionSubtitle:
+    "Partagez avec nous les difficultés de votre entreprise. Si votre projet est sélectionné, nous développerons une solution à coût minimal et partagerons les revenus lors de sa commercialisation auprès d'autres entreprises.",
+  submissionFormTitle: "Formulaire de Soumission",
+  submissionFormSubtitle:
+    "Parlez-nous de votre entreprise et du problème que vous souhaitez résoudre.",
+  submissionFormBusinessName: "Nom de l'Entreprise",
+  submissionFormBusinessNamePlaceholder: "Votre Entreprise SARL",
+  submissionFormBusinessContact: "Nom du Contact",
+  submissionFormBusinessContactPlaceholder: "Jean Dupont",
+  submissionFormBusinessEmail: "Email",
+  submissionFormBusinessEmailPlaceholder: "votre.email@exemple.com",
+  submissionFormBusinessIndustry: "Secteur d'Activité",
+  submissionFormBusinessIndustryPlaceholder: "Location",
+  submissionFormBusinessDescription: "Décrivez votre projet",
+  submissionFormBusinessDescriptionPlaceholder:
+    "Parlez-nous du problème que vous rencontrez et de son impact sur votre entreprise...",
+  submissionButton: "Soumettre le Projet",
+  submissionSubmitting: "Soumission en cours...",
+  submissionFeedback: "Projet Soumis !",
+  submissionFeedbackMessage:
+    "Nous examinerons votre projet et vous recontacterons sous 3 jours ouvrés.",
+  submissionPolicy:
+    "En soumettant, vous acceptez nos Conditions Générales de Service et notre Politique de Confidentialité.",
+  submissionPrivacy:
+    "Vos informations restent confidentielles et ne sont utilisées que pour évaluer votre projet.",
 };
 
 const de: Translations = {
@@ -521,7 +599,7 @@ const de: Translations = {
     "Techify behält das geistige Eigentum an der Kernlösung, aber Sie erhalten eine unbefristete Lizenz zur Nutzung. Dies ermöglicht es uns, die Lösung anderen Unternehmen anzubieten und gleichzeitig sicherzustellen, dass Sie immer Zugriff haben.",
   faqQuestion4: "Wie wird die Umsatzbeteiligung berechnet?",
   faqAnswer4:
-    "Die Umsatzbeteiligung beträgt typischerweise 15-25% der Abonnementgebühren, die von zukünftigen Kunden gezahlt werden, die die aus Ihrer Herausforderung entwickelte Lösung nutzen. Der genaue Prozentsatz hängt von der Komplexität und Einzigartigkeit Ihrer spezifischen Anforderungen ab.",
+    "Die Umsatzbeteiligung beträgt in der Regel 25 bis 50 % der Marge aus den Abonnementgebühren, die von zukünftigen Kunden gezahlt werden, die die aus Ihrem Projekt entwickelte Lösung nutzen. Der genaue Prozentsatz hängt von der Komplexität und dem gewählten Vertriebsmodell ab.",
   faqQuestion5: "Wie lange dauert der Entwicklungsprozess?",
   faqAnswer5:
     "Die Entwicklungszeiträume variieren je nach Komplexität, aber die meisten Lösungen erreichen die erste Bereitstellung innerhalb von 2-4 Monaten. Wir folgen einer agilen Methodik mit regelmäßigen Updates und Testmeilensteinen.",
@@ -601,6 +679,33 @@ const de: Translations = {
   sovereigntyMatters: "Warum Europäische Souveränität Wichtig Ist",
   sovereigntyMattersContent:
     "In der heutigen digitalen Wirtschaft ist die Kontrolle über Ihre Geschäftsdaten und Ihren Technologiestack wichtiger denn je. Europäische Souveränität stellt sicher, dass:",
+  // Submission
+  submissionTitle: "Herausforderung Einreichen",
+  submissionSubtitle:
+    "Teilen Sie uns Ihre geschäftlichen Probleme mit. Wenn Ihr Projekt ausgewählt wird, entwickeln wir eine Lösung zu minimalen Kosten und teilen die Einnahmen, wenn sie anderen vermarktet wird.",
+  submissionFormTitle: "Herausforderungs-Einreichungsformular",
+  submissionFormSubtitle:
+    "Erzählen Sie uns von Ihrem Unternehmen und dem Problem, das Sie lösen möchten.",
+  submissionFormBusinessName: "Firmenname",
+  submissionFormBusinessNamePlaceholder: "Ihre Firma GmbH",
+  submissionFormBusinessContact: "Kontaktname",
+  submissionFormBusinessContactPlaceholder: "Max Mustermann",
+  submissionFormBusinessEmail: "E-Mail",
+  submissionFormBusinessEmailPlaceholder: "Ihre.email@beispiel.com",
+  submissionFormBusinessIndustry: "Branche",
+  submissionFormBusinessIndustryPlaceholder: "Vermietung",
+  submissionFormBusinessDescription: "Beschreiben Sie Ihre Herausforderung",
+  submissionFormBusinessDescriptionPlaceholder:
+    "Erzählen Sie uns von dem Problem, dem Sie gegenüberstehen, und wie es Ihr Unternehmen beeinflusst...",
+  submissionButton: "Herausforderung Einreichen",
+  submissionSubmitting: "Wird eingereicht...",
+  submissionFeedback: "Projekt Eingereicht!",
+  submissionFeedbackMessage:
+    "Wir werden Ihre Herausforderung prüfen und uns innerhalb von 3 Werktagen bei Ihnen melden.",
+  submissionPolicy:
+    "Mit dem Einreichen stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu.",
+  submissionPrivacy:
+    "Ihre Informationen werden vertraulich behandelt und nur zur Bewertung Ihres Projekts verwendet.",
 };
 
 export const languages = [

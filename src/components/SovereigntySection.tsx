@@ -29,7 +29,7 @@ const SovereigntySection = () => {
           <Card className="border-l-4 border-l-studio-teal">
             <CardHeader className="pb-2">
               <CardTitle className="text-xl flex items-center">
-                <Shield className="h-5 w-5 mr-2 text-studio-teal" /> Our
+                <Shield className="h-5 w-5 mr-2 text-studio-teal" />
                 {t("sovereigntyPledgeTitle")}
               </CardTitle>
             </CardHeader>
