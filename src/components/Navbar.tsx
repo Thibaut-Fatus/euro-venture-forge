@@ -1,6 +1,5 @@
-
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
@@ -39,25 +38,46 @@ const Navbar = () => {
           </div>
 
           <nav className="hidden md:flex space-x-10">
-            <Link to="/" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-            {t('home')}
+            <Link
+              to="/"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
+              {t("home")}
             </Link>
-            <Link to="/about" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navAbout')}
+            <Link
+              to="/about"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
+              {t("navAbout")}
             </Link>
-            <Link to="/projects" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navProjects')}
+            <Link
+              to="/projects"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
+              {t("navProjects")}
             </Link>
-            <a href="/#how-it-works" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navHowItWorks')}
+            {/* <a
+              href="/#how-it-works"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
+              {t("navHowItWorks")}
             </a>
-            <a href="/#benefits" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navBenefits')}
+            <a
+              href="/#benefits"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
+              {t("navBenefits")}
             </a>
-            <a href="/#faq" className="text-base font-medium text-gray-700 hover:text-studio-blue">
-              {t('navFaq')}
-            </a>
-            <Link to="/contact" className="text-base font-medium text-gray-700 hover:text-studio-blue">
+            <a
+              href="/#faq"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
+              {t("navFaq")}
+            </a> */}
+            <Link
+              to="/contact"
+              className="text-base font-medium text-gray-700 hover:text-studio-blue"
+            >
               Contact
             </Link>
           </nav>
@@ -69,7 +89,7 @@ const Navbar = () => {
             </Button> */}
             <Link to="/contact">
               <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
-                {t('submitProject')}
+                {t("submitProject")}
               </Button>
             </Link>
           </div>
@@ -115,7 +135,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      {t('navAbout')}
+                      {t("navAbout")}
                     </span>
                   </Link>
                   <Link
@@ -124,7 +144,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      {t('navProjects')}
+                      {t("navProjects")}
                     </span>
                   </Link>
                   <a
@@ -133,7 +153,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      {t('navHowItWorks')}
+                      {t("navHowItWorks")}
                     </span>
                   </a>
                   <a
@@ -142,7 +162,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      {t('navBenefits')}
+                      {t("navBenefits")}
                     </span>
                   </a>
                   <a
@@ -151,7 +171,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="text-base font-medium text-gray-700">
-                      {t('navFaq')}
+                      {t("navFaq")}
                     </span>
                   </a>
                   <Link
@@ -171,12 +191,15 @@ const Navbar = () => {
                 <LanguageSelector />
               </div>
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Button variant="ghost" className="text-studio-blue hover:text-studio-teal justify-center">
-                  {t('login')}
+                <Button
+                  variant="ghost"
+                  className="text-studio-blue hover:text-studio-teal justify-center"
+                >
+                  {t("login")}
                 </Button>
                 <Link to="/contact" className="w-full">
                   <Button className="w-full bg-studio-blue hover:bg-studio-teal">
-                    {t('submitProject')}
+                    {t("submitProject")}
                   </Button>
                 </Link>
               </div>
