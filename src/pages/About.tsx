@@ -65,14 +65,6 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="h-12 w-12 rounded-full bg-studio-blue/10 flex items-center justify-center mb-6">
-                  <span className="text-2xl">🇪🇺</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-4 text-studio-navy">{t('value1Title')}</h3>
-                <p className="text-gray-600">{t('value1Content')}</p>
-              </div>
-
-              <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="h-12 w-12 rounded-full bg-studio-blue/10 flex items-center justify-center mb-6">
                   <span className="text-2xl">🤝</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-studio-navy">{t('value2Title')}</h3>
@@ -85,6 +77,14 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-studio-navy">{t('value3Title')}</h3>
                 <p className="text-gray-600">{t('value3Content')}</p>
+              </div>
+
+              <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="h-12 w-12 rounded-full bg-studio-blue/10 flex items-center justify-center mb-6">
+                  <span className="text-2xl">🇪🇺</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-studio-navy">{t('value1Title')}</h3>
+                <p className="text-gray-600">{t('value1Content')}</p>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ const About = () => {
                 <Button size="lg" className="bg-studio-teal hover:bg-teal-600">
                   {t('submitProject')}
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/20">
+                <Button size="lg" variant="outline" className="text-slate-800 hover:text-white border-white hover:bg-white/20">
                   {t('contactUs')}
                 </Button>
               </div>

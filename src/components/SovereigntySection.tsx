@@ -1,38 +1,41 @@
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { useLanguage } from "@/context/LanguageContext";
+import { getFeatures, getReasons } from "@/translations/sovereignty";
 import { Check, Shield } from "lucide-react";
 
-const features = [
-  "European data centers and infrastructure",
-  "GDPR-compliant by design",
-  "Open source technologies prioritized",
-  "Local technical support and development",
-  "No dependency on non-European tech giants",
-  "Data security and sovereignty guaranteed",
-];
-
 const SovereigntySection = () => {
+  const { currentLanguage, t } = useLanguage();
+  const features = getFeatures({ languageCode: currentLanguage.code });
+  const sovereigntyMattersReasons = getReasons({
+    languageCode: currentLanguage.code,
+  });
   return (
     <section className="section-container">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-3xl font-bold text-studio-navy mb-4">European Digital Sovereignty</h2>
+          <h2 className="text-3xl font-bold text-studio-navy mb-4">
+            {t("sovereigntyTitle")}
+          </h2>
           <p className="text-lg text-gray-600 mb-8">
-            At Techify, we believe in building a resilient European digital ecosystem
-            that reduces dependencies on foreign technologies while fostering innovation.
+            {t("sovereigntySubtitle")}
           </p>
 
           <Card className="border-l-4 border-l-studio-teal">
             <CardHeader className="pb-2">
               <CardTitle className="text-xl flex items-center">
-                <Shield className="h-5 w-5 mr-2 text-studio-teal" /> Our Sovereignty Pledge
+                <Shield className="h-5 w-5 mr-2 text-studio-teal" /> Our
+                {t("sovereigntyPledgeTitle")}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base text-gray-600">
-                We commit to developing all solutions using European cloud infrastructure, tools, and
-                technologies whenever possible, ensuring your data and business remains under European
-                jurisdiction and control.
+                {t("sovereigntyPledge")}
               </CardDescription>
             </CardContent>
           </Card>
@@ -63,38 +66,22 @@ const SovereigntySection = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-semibold mb-4 text-studio-navy">Why European Sovereignty Matters</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-studio-navy">
+              {t("sovereigntyMatters")}
+            </h3>
 
             <p className="text-gray-600 mb-4">
-              In today's digital economy, controlling your business data and technology stack
-              is more important than ever. European sovereignty ensures:
+              {t("sovereigntyMattersContent")}
             </p>
-
             <ul className="space-y-2 text-gray-600">
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-studio-teal/10 text-studio-teal mr-2">
-                  <Check className="h-3 w-3" />
-                </span>
-                <span>Compliance with EU regulations</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-studio-teal/10 text-studio-teal mr-2">
-                  <Check className="h-3 w-3" />
-                </span>
-                <span>Protection from foreign legislation</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-studio-teal/10 text-studio-teal mr-2">
-                  <Check className="h-3 w-3" />
-                </span>
-                <span>Long-term resilience for your business</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-studio-teal/10 text-studio-teal mr-2">
-                  <Check className="h-3 w-3" />
-                </span>
-                <span>Support for the European tech ecosystem</span>
-              </li>
+              {sovereigntyMattersReasons.map((reason) => (
+                <li key={reason} className="flex items-start">
+                  <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-studio-teal/10 text-studio-teal mr-2">
+                    <Check className="h-3 w-3" />
+                  </span>
+                  <span>{reason}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
