@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link to="/">
               <span className="sr-only">Techify</span>
               <h1 className="text-2xl font-bold text-studio-navy">
-                Tec<span className="text-studio-teal">h</span>ify
+                Tec<span className="text-studio-blue">h</span>ify
               </h1>
             </Link>
           </div>

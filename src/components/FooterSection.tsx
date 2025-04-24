@@ -1,6 +1,6 @@
-
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   const { t } = useLanguage();
@@ -11,9 +11,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">Techify</h3>
-            <p className="text-gray-300 mb-6">
-              Transforming small business challenges into shared opportunities across Europe.
-            </p>
+            <p className="text-gray-300 mb-6">{t("footerTagline")}</p>
             {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white">
                 <span className="sr-only">LinkedIn</span>
@@ -37,24 +35,58 @@ const FooterSection = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t("footerLinkTitle")}
+            </h3>
             <ul className="space-y-2">
-              <li><a href="#how-it-works" className="text-gray-300 hover:text-white">How It Works</a></li>
-              <li><a href="#benefits" className="text-gray-300 hover:text-white">Benefits</a></li>
-              <li><a href="#projects" className="text-gray-300 hover:text-white">Projects</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-white">About Us</a></li>
-              <li><a href="#faq" className="text-gray-300 hover:text-white">FAQ</a></li>
-              <li><a href="#submit" className="text-gray-300 hover:text-white">Submit Project</a></li>
+              {/* <li>
+                <a
+                  href="#how-it-works"
+                  className="text-gray-300 hover:text-white"
+                >
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/#benefits"
+                  className="text-gray-300 hover:text-white"
+                >
+                  Benefits
+                </Link>
+              </li> */}
+              <li>
+                <Link to="/projects" className="text-gray-300 hover:text-white">
+                  {t("footerProjects")}
+                </Link>
+              </li>
+              {/* <li>
+                <a href="#about" className="text-gray-300 hover:text-white">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-gray-300 hover:text-white">
+                  FAQ
+                </a>
+              </li> */}
+              <li>
+                <Link to="/contact" className="text-gray-300 hover:text-white">
+                  {t("footerSubmit")}
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t("footerContactUs")}
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-studio-teal mr-3 mt-1" />
                 <span className="text-gray-300">
-                  {t('contactOfficeAddress')}
+                  {t("contactOfficeAddress")}
                 </span>
               </li>
               {/* <li className="flex items-center">
@@ -67,7 +99,6 @@ const FooterSection = () => {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
 
@@ -77,9 +108,15 @@ const FooterSection = () => {
             &copy; 2024 Techify. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">Cookie Policy</a>
+            <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">
+              Privacy Policy
+            </a>
+            <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">
+              Terms of Service
+            </a>
+            <a href="#" className="text-gray-400 hover:text-gray-300 text-sm">
+              Cookie Policy
+            </a>
           </div>
         </div>
       </div>

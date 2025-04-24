@@ -144,6 +144,13 @@ export interface Translations {
   submissionFeedbackMessage: string;
   submissionPolicy: string;
   submissionPrivacy: string;
+
+  // Footer
+  footerTagline: string;
+  footerLinkTitle: string;
+  footerProjects: string;
+  footerSubmit: string;
+  footerContactUs: string;
 }
 
 const en: Translations = {
@@ -331,6 +338,14 @@ const en: Translations = {
     "By submitting, you agree to our Terms of Service and Privacy Policy.",
   submissionPrivacy:
     "Your information is kept confidential and only used to evaluate your project.",
+
+  // Footer
+  footerTagline:
+    "Transforming small business challenges into revenues opportunities.",
+  footerLinkTitle: "Quick Links",
+  footerProjects: "Projects",
+  footerSubmit: "Submit Project",
+  footerContactUs: "Contact Us",
 };
 
 const fr: Translations = {
@@ -519,6 +534,14 @@ const fr: Translations = {
     "En soumettant, vous acceptez nos Conditions Générales de Service et notre Politique de Confidentialité.",
   submissionPrivacy:
     "Vos informations restent confidentielles et ne sont utilisées que pour évaluer votre projet.",
+
+  // Footer
+  footerTagline:
+    "Transformer les défis des petites entreprises en opportunités de revenus.",
+  footerLinkTitle: "Liens rapides",
+  footerProjects: "Projets",
+  footerSubmit: "Soumettre un projet",
+  footerContactUs: "Contactez-nous",
 };
 
 const de: Translations = {
@@ -706,6 +729,14 @@ const de: Translations = {
     "Mit dem Einreichen stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu.",
   submissionPrivacy:
     "Ihre Informationen werden vertraulich behandelt und nur zur Bewertung Ihres Projekts verwendet.",
+
+  // Footer
+  footerTagline:
+    "Kleine Unternehmensherausforderungen in Umsatzchancen verwandeln.",
+  footerLinkTitle: "Schnelllinks",
+  footerProjects: "Projekte",
+  footerSubmit: "Projekt einreichen",
+  footerContactUs: "Kontaktieren Sie uns",
 };
 
 export const languages = [
